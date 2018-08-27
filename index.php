@@ -4,7 +4,7 @@
 // Press the 'Run' button on the top to start the web server,
 // then click the URL that is emitted to the Output tab of the console
 
-echo 'Mytchell Beaton';
+echo '<h1>Mytchell Beaton </h1>';
 
 ?>
 </body>
