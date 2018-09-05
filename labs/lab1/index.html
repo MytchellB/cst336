@@ -16,10 +16,20 @@ in html
         <title>Lab 1: Mytchell Beaton's Website</title>
         
         <style>
+            .content {
+                max-width: 500px;
+                margin: auto;
+            }
+            
             hr {
                 width: 50%;
                 height: 5px;
                 background: #333;
+            }
+            
+            a { 
+                padding: 10px;
+                
             }
         </style>
     </head>
@@ -30,21 +40,35 @@ in html
     <body>
         
         <header>
-        <h1> Mytchell Beaton </h1>
+            <h1> Mytchell Beaton </h1> <!--block tag -->
+            <h2> My ePortfolio </h2>
         </header>
         
         <hr>
         
         <nav>
-            <a href="index.html"> Home </a>
-            <a href="index.html"> About </a>
-            <a href="index.html"> Contact Me </a>
+            <a href="index.html"> Home </a> <!--inline tag -->
+            <a href="about.html"> About </a>
+            <a href="contact.html"> Contact Me </a>
         </nav>
+        
+        <main>
+            <figure>
+                <img src="img/juan_doe.png">
+            </figure>
+        </main>
+        
+        <hr>
         
         <!-- This is the footer -->
         <!-- The footer goes inside the body but not always -->
         <footer>
             
+            &copy; 2018 Mytchell Beaton <br />
+            Disclaimer: The information in this website is fake. Academic purposes only.
+            <br />
+            
+            <img src="../../img/csumb-logo.png">
             
         </footer>
         <!-- closing footer -->
