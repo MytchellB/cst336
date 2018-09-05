@@ -16,10 +16,6 @@ in html
         <title>Lab 1: Mytchell Beaton's Website</title>
         
         <style>
-            .content {
-                max-width: 500px;
-                margin: auto;
-            }
             
             hr {
                 width: 50%;
@@ -31,6 +27,20 @@ in html
                 padding: 10px;
                 
             }
+            
+            div {
+                border: 1px solid red;
+                background-color: yellow;
+            }
+            
+            main {
+                display:flex;
+                justify-content:center;
+            }
+            
+            #clear {
+                clear: both;
+            }
         </style>
     </head>
 <!-- closing head -->
@@ -38,41 +48,74 @@ in html
     <!-- This is the body -->
     <!-- This is where we place the content of our website -->
     <body>
-        
-        <header>
-            <h1> Mytchell Beaton </h1> <!--block tag -->
-            <h2> My ePortfolio </h2>
-        </header>
-        
-        <hr>
-        
-        <nav>
-            <a href="index.html"> Home </a> <!--inline tag -->
-            <a href="about.html"> About </a>
-            <a href="contact.html"> Contact Me </a>
-        </nav>
-        
         <main>
-            <figure>
-                <img src="img/juan_doe.png">
-            </figure>
+        <div class="content">
+            
+            <div style="width: 50%; margin: 0 auto">
+                <header style="text-align:center">
+                    <h1> Mytchell Beaton </h1> <!--block tag -->
+                    <h2> My ePortfolio </h2>
+                </header>
+            </div>
+            
+            <hr>
+            
+            <div style="width: 50%; margin: 0 auto">
+                <nav>
+                    <div style="float:left">
+                    <a href="index.html"> Home </a> <!--inline tag -->
+                    </div>
+                    <div style="float:left">
+                    <a href="about.html"> About </a>
+                    </div>
+                    <div style="float:left">
+                    <a href="contact.html"> Contact Me </a>
+                    </div>
+                    <div id="clear"></div>
+                </nav>
+            </div>
+            
+            
+                <div style="align-content:center">
+                    <div style="float:left">
+                        <figure>
+                            <img src="img/juan_doe.png" alt="juan doe">
+                        </figure>
+                    </div>
+                    <div style="float:left">
+                        <h1> 
+                        Hello this is a website blah blah blah <br /> <br />
+                        This is another block of text <br /> <br />
+                        And another <br />
+                        </h1>
+                    </div>
+                    <div id="clear"></div>
+                </div>
+            
+            
+            <hr>
+            
+            <div style="width: 50%; margin: 0 auto">
+                <!-- This is the footer -->
+                <!-- The footer goes inside the body but not always -->
+                <footer>
+                    
+                    &copy; 2018 Mytchell Beaton <br />
+                    Disclaimer: The information in this website is fake. Academic purposes only.
+                    <br />
+                    
+                    <img src="../../img/csumb-logo.png" alt="CSUMB logo" title="This is the CSUMB logo">
+                    
+                </footer>
+                <!-- closing footer -->
+            </div>
+            
+                
+            </div>
+            
+        </div>
+        
         </main>
-        
-        <hr>
-        
-        <!-- This is the footer -->
-        <!-- The footer goes inside the body but not always -->
-        <footer>
-            
-            &copy; 2018 Mytchell Beaton <br />
-            Disclaimer: The information in this website is fake. Academic purposes only.
-            <br />
-            
-            <img src="../../img/csumb-logo.png">
-            
-        </footer>
-        <!-- closing footer -->
-        
     </body>
     <!-- closing body -->
 
