@@ -15,33 +15,7 @@ in html
         <meta charset="utf-8" /> 
         <title>Lab 1: Mytchell Beaton's Website</title>
         
-        <style>
-            
-            hr {
-                width: 50%;
-                height: 5px;
-                background: #333;
-            }
-            
-            a { 
-                padding: 10px;
-                
-            }
-            
-            div {
-                border: 1px solid red;
-                background-color: yellow;
-            }
-            
-            main {
-                display:flex;
-                justify-content:center;
-            }
-            
-            #clear {
-                clear: both;
-            }
-        </style>
+        <link href="css/styles.css" rel="stylesheet" />
     </head>
 <!-- closing head -->
 
@@ -49,26 +23,25 @@ in html
     <!-- This is where we place the content of our website -->
     <body>
         <main>
-        <div class="content">
+        <div id="content">
             
-            <div style="width: 50%; margin: 0 auto">
-                <header style="text-align:center">
-                    <h1> Mytchell Beaton </h1> <!--block tag -->
-                    <h2> My ePortfolio </h2>
+            <div id="content2">
+                <header>
+                    <h1> Mytchell Beaton - My ePortfolio </h1> <!--block tag -->
                 </header>
             </div>
             
             <hr>
             
-            <div style="width: 50%; margin: 0 auto">
+            <div id="content2">
                 <nav>
-                    <div style="float:left">
-                    <a href="index.html"> Home </a> <!--inline tag -->
+                    <div id="nav2">
+                    <a href="index.html"> <strong>Home</strong> </a> <!--inline tag -->
                     </div>
-                    <div style="float:left">
+                    <div id="nav2">
                     <a href="about.html"> About </a>
                     </div>
-                    <div style="float:left">
+                    <div id="nav2">
                     <a href="contact.html"> Contact Me </a>
                     </div>
                     <div id="clear"></div>
@@ -76,26 +49,25 @@ in html
             </div>
             
             
-                <div style="align-content:center">
-                    <div style="float:left">
-                        <figure>
-                            <img src="img/juan_doe.png" alt="juan doe">
+                <div id="content3">
+                    <div id="me">
+                        <figure >
+                            <img src="img/Mytchell.png" alt="Mytchell">
                         </figure>
                     </div>
-                    <div style="float:left">
-                        <h1> 
-                        Hello this is a website blah blah blah <br /> <br />
-                        This is another block of text <br /> <br />
-                        And another <br />
+                    <div id="welcomeText">
+                        <h1 class="mainText"> 
+                        Hello thank you for visiting my professional portfolio website <br /> <br />
+                        I am a computer science major with a concentration in Software Engineering <br /> <br />
+                        Feel free to contact me! <br />
                         </h1>
                     </div>
                     <div id="clear"></div>
                 </div>
-            
-            
+
             <hr>
             
-            <div style="width: 50%; margin: 0 auto">
+            <div id="welcomeFooter">
                 <!-- This is the footer -->
                 <!-- The footer goes inside the body but not always -->
                 <footer>
