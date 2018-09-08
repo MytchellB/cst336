@@ -9,6 +9,12 @@
                 background: #333;
             }
             
+            h1 {
+                font-family: 'Pacifico', cursive;
+                font-size: 4em;
+                margin-bottom: 0px
+            }
+            
             header, main, nav, footer{
                 text-align:center;
                 display:flex;
@@ -18,7 +24,7 @@
             
             nav a {
                 padding: 15px;
-                padding-bottom: 4px;
+                padding-bottom: 24px;
                 font-size: 1.8em;
                 text-decoration: none;
                 color: white;
@@ -31,8 +37,7 @@
             }
             
             div {
-                border-style: solid;
-                border-color: red;
+                
             }
             
             #me, #welcomeText {
@@ -41,7 +46,7 @@
             }
             
             #content2 {
-                width: 50%;
+                width: 100%;
                 margin: 0 auto;
                 color: white;
             }
@@ -69,6 +74,7 @@
             }
             
             table {
+                padding-top: 25px;
                 margin: 0px auto;
             }
             
@@ -111,4 +117,8 @@
             #contact {
                 font-size: 36px;
                 color: gray;
+            }
+            
+            #googleForm {
+                padding-top: 25px;
             }
