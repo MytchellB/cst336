@@ -32,8 +32,9 @@
             
             nav a:hover {
             	border-bottom: 2px orange solid;
-            	font-size: 2em;
+            	font-size: 44px;
             	transition: .9s;
+            	color: orange;
             }
             
             div {
