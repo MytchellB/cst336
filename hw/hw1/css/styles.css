@@ -1,6 +1,5 @@
             body {
                 background-color: #000000;
-                color: gray;
             }
             
             header, main, nav, footer{
@@ -32,13 +31,18 @@
             	color: orange;
             }
             
+            h1 {
+                letter-spacing: 6px;    
+            }
+            
             #content3 {
                 width: 50%;
                 margin-left: 25%;
                 text-align:center;
+                letter-spacing: .2px;
             }
             
-            #page1mainText {
+            .page1mainText {
                 text-align: center;
             }
             
@@ -46,6 +50,15 @@
                 text-align: center;
             }
 
+            #page4mainText {
+                
+            }
+            
             #logoHeader {
                 padding-right: 15px;
+            }
+            
+            #oldGoLogoDiv {
+                float: left;
+                content:center;   
             }
