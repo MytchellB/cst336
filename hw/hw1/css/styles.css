@@ -1,5 +1,6 @@
             body {
                 background-color: #000000;
+                color: gray;
             }
             
             header, main, nav, footer{
@@ -31,10 +32,6 @@
             	color: orange;
             }
             
-            h1 {
-                letter-spacing: 6px;    
-            }
-            
             #content3 {
                 width: 50%;
                 margin-left: 25%;
@@ -48,10 +45,6 @@
             
             #page2mainText {
                 text-align: center;
-            }
-
-            #page4mainText {
-                
             }
             
             #logoHeader {
