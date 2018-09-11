@@ -14,7 +14,10 @@
             
             <div id="content2">
                 <header>
-                    <h1> Go - Subtopic 2 </h1>
+                    <div id="logoHeader">
+                        <img src="img/Go_Logo_Aqua.svg"/>
+                    </div>
+                    <h1> - Concurrency </h1>
                 </header>
             </div>
             
@@ -29,7 +32,7 @@
                         <a href="page2.html"> <span id="page2"><strong>Page 2</strong></span> </a>
                     </div>
                     <div id="nav4">
-                        <a href="page3.html"> <span id="page3"><strong>Page 3</strong></span> </a>
+                        <a href="page3.html"> <span id="page3" style="color:orange"><strong>Page 3</strong></span> </a>
                     </div>
                     <div id="nav5">
                         <a href="page4.html"> <span id="page4"><strong>Page 4</strong></span> </a>
@@ -39,6 +42,27 @@
             </div>
             
             <hr>
+            
+            <div id="content3">
+                    <H1 id="page3mainText">
+                        Go achieves concurrency with goroutines and channels, which allows for CPU parallelism and running database operations while the rest of the prorgam runs simultaneously.
+                        <br>Goroutines are called with <span style="color:white">go</span> keyword, which then allows you to write a function using multiple threads.
+                        <br>Channels can be denoted as <span style="color:white">chan T</span> which specifies a channel that can only transmit messages of type <span style="color:white">T</span>.
+                        All of this allows you to utilize multiple threads on a CPU, and run multiple operations concurrently quite easily. 
+                        Especially when compared to the languages Go is attempting to improve upon.
+                        <br><br><img src="http://tensor-programming.com/wp-content/uploads/2016/11/go-channel.jpg" alt="go channels" title="go go"/>
+                    </H1>
+            </div>
+            
+            <hr>
+            
+            <div id="myFooter">
+            <footer> 
+            Mytchell Beaton
+            Sources - <a href="https://golang.org/ref/mem"> Click for Go Lang Memory Model </a>
+            </footer>
+            
+            </div>
             
         </div>
         

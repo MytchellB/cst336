@@ -9,6 +9,14 @@
                 justify-content:center;
             }
             
+            header {
+                color: green;
+            }
+            
+            footer {
+                margin-top: 25px;
+            }
+            
             nav a {
                 padding: 15px;
                 padding-bottom: 24px;
@@ -22,4 +30,22 @@
             	font-size: 44px;
             	transition: .9s;
             	color: orange;
+            }
+            
+            #content3 {
+                width: 50%;
+                margin-left: 25%;
+                text-align:center;
+            }
+            
+            #page1mainText {
+                text-align: center;
+            }
+            
+            #page2mainText {
+                text-align: center;
+            }
+
+            #logoHeader {
+                padding-right: 15px;
             }

@@ -1,0 +1,5 @@
+[10-Sep-2018 21:29:11 UTC] PHP Parse error:  syntax error, unexpected 'img' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/cst336/labs/lab2/index.php on line 10
+[10-Sep-2018 21:44:13 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/cst336/labs/lab2/index.php on line 13
+[10-Sep-2018 22:11:40 UTC] PHP Parse error:  syntax error, unexpected '>' in /home/ubuntu/workspace/cst336/labs/lab2/index.php on line 48
+[10-Sep-2018 22:11:41 UTC] PHP Parse error:  syntax error, unexpected '>' in /home/ubuntu/workspace/cst336/labs/lab2/index.php on line 48
+[10-Sep-2018 22:11:49 UTC] PHP Parse error:  syntax error, unexpected '$random_value' (T_VARIABLE), expecting ',' or ';' in /home/ubuntu/workspace/cst336/labs/lab2/index.php on line 48
