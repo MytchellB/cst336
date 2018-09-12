@@ -11,6 +11,7 @@
             
             header {
                 color: green;
+                text-shadow: 2px 1px red;
             }
             
             footer {
