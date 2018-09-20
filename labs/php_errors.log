@@ -3,3 +3,64 @@
 [10-Sep-2018 22:11:40 UTC] PHP Parse error:  syntax error, unexpected '>' in /home/ubuntu/workspace/cst336/labs/lab2/index.php on line 48
 [10-Sep-2018 22:11:41 UTC] PHP Parse error:  syntax error, unexpected '>' in /home/ubuntu/workspace/cst336/labs/lab2/index.php on line 48
 [10-Sep-2018 22:11:49 UTC] PHP Parse error:  syntax error, unexpected '$random_value' (T_VARIABLE), expecting ',' or ';' in /home/ubuntu/workspace/cst336/labs/lab2/index.php on line 48
+[17-Sep-2018 21:26:05 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/cst336/labs/lab2/index.php on line 71
+[17-Sep-2018 21:34:16 UTC] PHP Fatal error:  Call to undefined function printArray() in /home/ubuntu/workspace/cst336/labs/lab3/arrays.php on line 25
+[17-Sep-2018 21:34:16 UTC] PHP Stack trace:
+[17-Sep-2018 21:34:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab3/arrays.php:0
+[17-Sep-2018 21:34:17 UTC] PHP Fatal error:  Call to undefined function printArray() in /home/ubuntu/workspace/cst336/labs/lab3/arrays.php on line 25
+[17-Sep-2018 21:34:17 UTC] PHP Stack trace:
+[17-Sep-2018 21:34:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab3/arrays.php:0
+[17-Sep-2018 22:39:16 UTC] PHP Fatal error:  Cannot redeclare generateRandom() (previously declared in /home/ubuntu/workspace/cst336/labs/lab2/inc/functions.php:2) in /home/ubuntu/workspace/cst336/labs/lab2/inc/functions.php on line 2
+[17-Sep-2018 22:39:16 UTC] PHP Stack trace:
+[17-Sep-2018 22:39:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/index.php:0
+[17-Sep-2018 22:39:17 UTC] PHP Fatal error:  Cannot redeclare generateRandom() (previously declared in /home/ubuntu/workspace/cst336/labs/lab2/inc/functions.php:2) in /home/ubuntu/workspace/cst336/labs/lab2/inc/functions.php on line 2
+[17-Sep-2018 22:39:17 UTC] PHP Stack trace:
+[17-Sep-2018 22:39:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/index.php:0
+[17-Sep-2018 22:39:17 UTC] PHP Fatal error:  Cannot redeclare generateRandom() (previously declared in /home/ubuntu/workspace/cst336/labs/lab2/inc/functions.php:2) in /home/ubuntu/workspace/cst336/labs/lab2/inc/functions.php on line 2
+[17-Sep-2018 22:39:17 UTC] PHP Stack trace:
+[17-Sep-2018 22:39:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/index.php:0
+[17-Sep-2018 22:39:17 UTC] PHP Fatal error:  Cannot redeclare generateRandom() (previously declared in /home/ubuntu/workspace/cst336/labs/lab2/inc/functions.php:2) in /home/ubuntu/workspace/cst336/labs/lab2/inc/functions.php on line 2
+[17-Sep-2018 22:39:17 UTC] PHP Stack trace:
+[17-Sep-2018 22:39:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/index.php:0
+[17-Sep-2018 22:39:18 UTC] PHP Fatal error:  Cannot redeclare generateRandom() (previously declared in /home/ubuntu/workspace/cst336/labs/lab2/inc/functions.php:2) in /home/ubuntu/workspace/cst336/labs/lab2/inc/functions.php on line 2
+[17-Sep-2018 22:39:18 UTC] PHP Stack trace:
+[17-Sep-2018 22:39:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/index.php:0
+[17-Sep-2018 22:39:18 UTC] PHP Fatal error:  Cannot redeclare generateRandom() (previously declared in /home/ubuntu/workspace/cst336/labs/lab2/inc/functions.php:2) in /home/ubuntu/workspace/cst336/labs/lab2/inc/functions.php on line 2
+[17-Sep-2018 22:39:18 UTC] PHP Stack trace:
+[17-Sep-2018 22:39:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/index.php:0
+[20-Sep-2018 17:47:14 UTC] PHP Parse error:  syntax error, unexpected '=', expecting ',' or ';' in /home/ubuntu/workspace/cst336/labs/lab2/inc/functions.php on line 23
+[20-Sep-2018 17:47:14 UTC] PHP Stack trace:
+[20-Sep-2018 17:47:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/index.php:0
+[20-Sep-2018 18:37:21 UTC] PHP Fatal error:  Call to undefined function displayPoints() in /home/ubuntu/workspace/cst336/labs/lab2/index.php on line 16
+[20-Sep-2018 18:37:21 UTC] PHP Stack trace:
+[20-Sep-2018 18:37:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/index.php:0
+[20-Sep-2018 18:40:18 UTC] PHP Fatal error:  Call to undefined function printResults() in /home/ubuntu/workspace/cst336/labs/lab2/index.php on line 16
+[20-Sep-2018 18:40:18 UTC] PHP Stack trace:
+[20-Sep-2018 18:40:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/index.php:0
+[20-Sep-2018 18:40:18 UTC] PHP Fatal error:  Call to undefined function printResults() in /home/ubuntu/workspace/cst336/labs/lab2/index.php on line 16
+[20-Sep-2018 18:40:18 UTC] PHP Stack trace:
+[20-Sep-2018 18:40:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/index.php:0
+[20-Sep-2018 18:40:18 UTC] PHP Fatal error:  Call to undefined function printResults() in /home/ubuntu/workspace/cst336/labs/lab2/index.php on line 16
+[20-Sep-2018 18:40:19 UTC] PHP Stack trace:
+[20-Sep-2018 18:40:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/index.php:0
+[20-Sep-2018 18:40:19 UTC] PHP Fatal error:  Call to undefined function printResults() in /home/ubuntu/workspace/cst336/labs/lab2/index.php on line 16
+[20-Sep-2018 18:40:19 UTC] PHP Stack trace:
+[20-Sep-2018 18:40:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/index.php:0
+[20-Sep-2018 18:40:19 UTC] PHP Fatal error:  Call to undefined function printResults() in /home/ubuntu/workspace/cst336/labs/lab2/index.php on line 16
+[20-Sep-2018 18:40:19 UTC] PHP Stack trace:
+[20-Sep-2018 18:40:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/index.php:0
+[20-Sep-2018 18:40:19 UTC] PHP Fatal error:  Call to undefined function printResults() in /home/ubuntu/workspace/cst336/labs/lab2/index.php on line 16
+[20-Sep-2018 18:40:19 UTC] PHP Stack trace:
+[20-Sep-2018 18:40:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/index.php:0
+[20-Sep-2018 18:50:08 UTC] PHP Fatal error:  Call to undefined function printResults() in /home/ubuntu/workspace/cst336/labs/lab2/index.php on line 16
+[20-Sep-2018 18:50:08 UTC] PHP Stack trace:
+[20-Sep-2018 18:50:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/index.php:0
+[20-Sep-2018 18:50:53 UTC] PHP Fatal error:  Call to undefined function printResults() in /home/ubuntu/workspace/cst336/labs/lab2/index.php on line 16
+[20-Sep-2018 18:50:53 UTC] PHP Stack trace:
+[20-Sep-2018 18:50:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/index.php:0
+[20-Sep-2018 18:51:38 UTC] PHP Fatal error:  Cannot redeclare generateRandom() (previously declared in /home/ubuntu/workspace/cst336/labs/lab2/inc/functions.php:5) in /home/ubuntu/workspace/cst336/labs/lab2/inc/functions.php on line 5
+[20-Sep-2018 18:51:38 UTC] PHP Stack trace:
+[20-Sep-2018 18:51:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/index.php:0
+[20-Sep-2018 18:54:13 UTC] PHP Parse error:  syntax error, unexpected '"Sorry, you lose! Try Again!"' (T_CONSTANT_ENCAPSED_STRING) in /home/ubuntu/workspace/cst336/labs/lab2/inc/functions.php on line 58
+[20-Sep-2018 18:54:13 UTC] PHP Stack trace:
+[20-Sep-2018 18:54:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/index.php:0
