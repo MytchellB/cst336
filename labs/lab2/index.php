@@ -29,7 +29,8 @@
         <br><br><br><hr width="50%">
         <footer>
             This website is intended for educational purposes only.<br>
-            - Mytchell Beaton
+            - Mytchell Beaton<br>
+            <img src="img/buddy_verified.png" alt="buddy verified sticker" title="buddy verified"/>
         </footer>
         
     </body>
