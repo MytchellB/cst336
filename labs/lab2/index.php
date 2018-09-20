@@ -26,5 +26,11 @@
             </form>
         </div>
         
+        <br><br><br><hr width="50%">
+        <footer>
+            This website is intended for educational purposes only.<br>
+            - Mytchell Beaton
+        </footer>
+        
     </body>
 </html>
