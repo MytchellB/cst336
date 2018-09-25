@@ -1,5 +1,5 @@
             body {
-                /*background-color: #000000;*/
+                background-color: powderblue;
                 color: black;
             }
             
@@ -16,8 +16,16 @@
             
             #header{
                 padding-bottom: 50px;
+                text-shadow: 2px 2px white;
+                font-size: 72px;
             }
             
             #footer{
                 padding-top: 50px;
+                background-color: lightblue;
+            }
+            
+            #diceRolls{
+                padding-top: 15px;
+                background-color: gray;
             }

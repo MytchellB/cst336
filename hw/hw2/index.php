@@ -19,25 +19,27 @@
             <div id="main">
                 <header>
                     <div id="header">
-                        Welcome to 10,000!
+                        Welcome to 10,000!<br>
                     </div>
                 </header>
-                <?php
-                    rollDice();
-                    echo "<br><br>";
-                    rollDice();
-                    echo "<br><br>";
-                    rollDiceArray();
-                    echo "<br><br>";
-                    rollDiceArray();
-                    echo "<br><br>";
-                    scoreDice();
-                ?>
+                <div id="diceRolls">
+                    <?php
+                        // rollDice();
+                        // echo "<br><br>";
+                        // rollDice();
+                        // echo "<br><br>";
+                        rollDiceArray();
+                        echo "<br><br>";
+                        rollDiceArray();
+                        echo "<br><br>";
+                        scoreDice();
+                    ?>
+                </div>
                 
                 <footer>
                     <div id="footer">
                         Educational purposes only - Mytchell Beaton  <br>
-                        Rules of 10k: <br>
+                        Rules of Farkle: <br>
                         1's = 100 <br>
                         5's = 50 <br>
                         Three 1's = 100<br>
