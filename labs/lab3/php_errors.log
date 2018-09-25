@@ -1,0 +1,4 @@
+[24-Sep-2018 21:53:26 UTC] PHP Parse error:  syntax error, unexpected ')', expecting '(' in /home/ubuntu/workspace/cst336/labs/lab3/folder/coinToss.php on line 4
+[24-Sep-2018 21:56:37 UTC] PHP Fatal error:  Call to undefined function push() in /home/ubuntu/workspace/cst336/labs/lab3/folder/coinToss.php on line 16
+[24-Sep-2018 21:56:37 UTC] PHP Stack trace:
+[24-Sep-2018 21:56:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab3/folder/coinToss.php:0

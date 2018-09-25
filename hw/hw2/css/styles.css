@@ -1,0 +1,23 @@
+            body {
+                /*background-color: #000000;*/
+                color: black;
+            }
+            
+            header, main, nav, footer{
+                text-align:center;
+                display:flex;
+                justify-content:center;
+            }
+            
+            #main{
+                text-align:center;
+                margin-top: 50px;
+            }
+            
+            #header{
+                padding-bottom: 50px;
+            }
+            
+            #footer{
+                padding-top: 50px;
+            }
