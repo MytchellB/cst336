@@ -37,10 +37,10 @@
                         whoWon();
                     ?>
                 </div>
-                <div>
+                <div id="refreshButton">
                     <input id="refreshPage" type="button" value="Refresh Page" onClick="window.location.reload()">
                 </div>
-                
+                <div id="clear"></div>
                 <footer>
                     <div id="footer">
                         Educational purposes only - Mytchell Beaton  <br>

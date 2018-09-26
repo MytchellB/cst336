@@ -11,24 +11,30 @@
             
             #main{
                 text-align:center;
-                margin-top: 50px;
+                margin-top: 1.5%;
+                margin: auto;
             }
             
             #header{
-                padding-bottom: 50px;
+                padding-bottom: 1.5%;
                 text-shadow: 2px 2px white;
                 font-size: 72px;
             }
             
             #footer{
-                padding-top: 50px;
+                padding-top: 1.5%;
                 background-color: lightblue;
+                float: bottom;
             }
             
             #diceRolls{
                 padding-top: 15px;
                 background-color: gray;
                 font-size: 36px;
+                float:left;
+                margin-right: 10px;
+                /*left: 50%;*/
+                margin-left: 250px;
             }
             
             #refreshPage{
@@ -37,4 +43,12 @@
                 font-size: 36px;
                 margin-top: 25px;
                 background-color: blue;
+            }
+            
+            #refreshButton{
+                float:left;
+            }
+            
+            #clear {
+                clear: both;
             }
