@@ -64,3 +64,6 @@
 [20-Sep-2018 18:54:13 UTC] PHP Parse error:  syntax error, unexpected '"Sorry, you lose! Try Again!"' (T_CONSTANT_ENCAPSED_STRING) in /home/ubuntu/workspace/cst336/labs/lab2/inc/functions.php on line 58
 [20-Sep-2018 18:54:13 UTC] PHP Stack trace:
 [20-Sep-2018 18:54:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/index.php:0
+[26-Sep-2018 22:21:35 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/cst336/labs/lab4/index.php on line 4
+[26-Sep-2018 22:21:52 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/cst336/labs/lab4/index.php on line 4
+[26-Sep-2018 22:21:53 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/cst336/labs/lab4/index.php on line 4
