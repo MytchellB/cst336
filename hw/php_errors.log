@@ -8,3 +8,9 @@
 [25-Sep-2018 02:01:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw2/index.php:0
 [25-Sep-2018 02:01:35 UTC] PHP   2. rollDiceArray() /home/ubuntu/workspace/cst336/hw/hw2/index.php:27
 [25-Sep-2018 02:01:35 UTC] PHP   3. array_push() /home/ubuntu/workspace/cst336/hw/hw2/functions/functions.php:11
+[25-Sep-2018 17:31:21 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/cst336/hw/hw2/functions/functions.php on line 27
+[25-Sep-2018 17:31:21 UTC] PHP Stack trace:
+[25-Sep-2018 17:31:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw2/index.php:0
+[25-Sep-2018 18:24:15 UTC] PHP Fatal error:  Cannot use [] for reading in /home/ubuntu/workspace/cst336/hw/hw2/functions/functions.php on line 103
+[25-Sep-2018 18:24:15 UTC] PHP Stack trace:
+[25-Sep-2018 18:24:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw2/index.php:0

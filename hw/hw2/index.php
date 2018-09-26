@@ -33,7 +33,12 @@
                         rollDiceArray();
                         echo "<br><br>";
                         scoreDice();
+                        scoreDice();
+                        whoWon();
                     ?>
+                </div>
+                <div>
+                    <input id="refreshPage" type="button" value="Refresh Page" onClick="window.location.reload()">
                 </div>
                 
                 <footer>

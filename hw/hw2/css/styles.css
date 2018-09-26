@@ -28,4 +28,13 @@
             #diceRolls{
                 padding-top: 15px;
                 background-color: gray;
+                font-size: 36px;
+            }
+            
+            #refreshPage{
+                width: 250px;
+                height: 75px;
+                font-size: 36px;
+                margin-top: 25px;
+                background-color: blue;
             }
