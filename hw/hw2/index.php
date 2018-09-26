@@ -49,7 +49,7 @@
                         5's = 50 <br>
                         Three 1's = 100<br>
                         Three 2's = 200<br>
-                        Three 3's = 200<br>
+                        Three 3's = 300<br>
                         etc... <br>
                         1-2-3-4-5-6 = 3000 <br>
                         Three Pairs = 1500
