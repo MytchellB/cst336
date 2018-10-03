@@ -7,6 +7,16 @@
         }
     }
     
+    function formIsValid() {
+        
+        if (empty($_GET['keyword']) && empty($_GET['category'])) {
+            echo "<h1> ERROR!!! You must type a keyword or select a category</h1>";
+            return false;
+        }
+        return true;
+                
+    }
+    
     if (isset($_GET["keyword"])){ // checks if form has been submitted.
         include "api/pixabayAPI.php";
         // print_r($_GET); // Prints all values in GET.
@@ -51,16 +61,16 @@
 
     <body>
         <form action="index.php" method="GET">
-            <input type="text" name="keyword" size="15" placeholder="Keyword"/>
-            <input type="radio" name="layout" value="horizontal"> Horizontal
-            <input type="radio" name="layout" value="vertical"> Vertical
+            <input type="text" name="keyword" size="15" placeholder="Keyword" value="<?=$_GET['keyword']?>"/>
+            <input type="radio" name="layout" value="horizontal" <?= ($_GET['layout'] == 'horizontal')?" checked ":""?> > Horizontal
+            <input type="radio" name="layout" value="vertical" <?= ($_GET['layout'] == 'vertical')?" checked ":""?> > Vertical
             
             <select name="category">
                 <option value=""> Select One </option>
                 <option value="ocean">Sea</option>
                 <option>Mountains</option>
                 <option>Forest</option>
-                <option>Sky</option>
+                <option  <?= ($_GET['category'] == 'Sky')?"Sky":""?> >Sky</option>
             </select>
             
             <input type="submit" value="Submit" name="submitButton"/>
@@ -70,7 +80,7 @@
         <h1> <?=noData()?></h1>
     
         <?php
-        if (isset($imageURLs)) { ?>
+        if (isset($imageURLs) && formIsValid() ) { ?>
     
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
@@ -87,9 +97,16 @@
                 </div>
                 <?php
                     for ($i = 1; $i < 7; $i++) {
-                      echo "<div class=\"carousel-item\">";
-                      echo "<img class=\"d-block w-100\" src=\"".$imageURLs[$i]."\" alt=\"Second slide\">";
+                      do {
+                       $randomIndex = array_rand($imageURLs);  // rand(0, count($imageURLs)-1);
+                      }
+                      while (!isset($imageURLs[$randomIndex]));
+                      echo "<div class=\"carousel-item ";
+                      echo ($i == 0)?" active ":"";
+                      echo "\">";
+                      echo "<img class=\"d-block w-100\" src=\"".$imageURLs[$randomIndex]."\" alt=\"Second slide\">";
                       echo "</div>";
+                      unset($imageURLs[$randomIndex]);
                   }
                 ?>
               </div>
