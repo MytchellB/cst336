@@ -45,7 +45,6 @@
      <title> Lab 4: Pixabay Slideshow </title>
      
      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-     <link rel="stylesheet" href="css/styles.css" type="text/css" />
      
      <style>
          body {
@@ -57,27 +56,42 @@
              margin:0 auto;
          }
      </style>
+     <link rel="stylesheet" href="css/styles.css" type="text/css" />
     </head>
 
     <body>
-        <form action="index.php" method="GET">
-            <input type="text" name="keyword" size="15" placeholder="Keyword" value="<?=$_GET['keyword']?>"/>
-            <input type="radio" name="layout" value="horizontal" <?= ($_GET['layout'] == 'horizontal')?" checked ":""?> > Horizontal
-            <input type="radio" name="layout" value="vertical" <?= ($_GET['layout'] == 'vertical')?" checked ":""?> > Vertical
+            <form action="index.php" method="GET">
+                <input type="text" name="keyword" size="15" placeholder="Keyword" value="<?=$_GET['keyword']?>"/>
+                
+                <div id="layoutDiv">
+                    <input type="radio" name="layout" value="horizontal" id="layout_h" checked/>
+                    <label for="layout_h"> Horizontal </label><br />
+                    <input type="radio" name="layout" value="vertical" id="layout_v"   />
+                    <label for="layout_v"> Vertical </label><br />
+                </div>
+                
+                <!--<div id="layout">-->
+                <!--    <input type="radio" name="layout" value="horizontal" <?= ($_GET['layout'] == 'horizontal')?" checked ":""?> > Horizontal-->
+                <!--    <input type="radio" name="layout" value="vertical" <?= ($_GET['layout'] == 'vertical')?" checked ":""?> > Vertical-->
+                <!--</div>-->
+                
+                <div id="content">
+                    <select name="category">
+                        <option value=""> Select One </option>
+                        <option value="ocean">Sea</option>
+                        <option>Mountains</option>
+                        <option>Forest</option>
+                        <option  <?= ($_GET['category'] == 'Sky')?"Sky":""?> >Sky</option>
+                    </select>
+                    
+                    <input type="submit" value="Submit" name="submitButton"/>
+                </div>
+                <div style="clear:both"></div>
+                
+            </form>
             
-            <select name="category">
-                <option value=""> Select One </option>
-                <option value="ocean">Sea</option>
-                <option>Mountains</option>
-                <option>Forest</option>
-                <option  <?= ($_GET['category'] == 'Sky')?"Sky":""?> >Sky</option>
-            </select>
-            
-            <input type="submit" value="Submit" name="submitButton"/>
-        </form>
-        
-        <h1> Select a category or type a keyword </h1>
-        <h1> <?=noData()?></h1>
+            <h1> Select a category or type a keyword </h1>
+            <h1> <?=noData()?></h1>
     
         <?php
         if (isset($imageURLs) && formIsValid() ) { ?>
@@ -120,11 +134,7 @@
               </a>
             </div>
         
-        <?php }
-        else{
-            echo "No keyword or category has been selected, TRY AGAIN!<br>";
-        }
-        ?>
+        <?php } ?>
     
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
