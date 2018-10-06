@@ -1,9 +1,8 @@
     body{
         opacity:0.9;
         width:100%;
-        
+        text-align: center;
         color:yellow;
-        background-size: 100% 100%;
     }
     
     input {
@@ -11,15 +10,24 @@
         color: black;
     }
     
+    form {
+        border-radius:10px;
+    }
+    
+    input {
+        font-size: 2em;
+        color: black;
+        border-radius:20px;
+    }
+    
     #carousel-example-generic {
          margin: 0 auto;   
          width: 700px;
     }
     
-    #layout{
-        background-color:white;
-        color:black;
-        overflow:auto;
+    #carouselExampleIndicators{
+        width:700px;
+        margin:0 auto;
     }
     
     #content{

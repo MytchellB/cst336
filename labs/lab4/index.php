@@ -51,10 +51,6 @@
              background-image: url(<?=$backgroundImage?>);
              background-size: cover;
          }
-         #carouselExampleIndicators{
-             width:700px;
-             margin:0 auto;
-         }
      </style>
      <link rel="stylesheet" href="css/styles.css" type="text/css" />
     </head>
@@ -74,8 +70,7 @@
                 <!--    <input type="radio" name="layout" value="horizontal" <?= ($_GET['layout'] == 'horizontal')?" checked ":""?> > Horizontal-->
                 <!--    <input type="radio" name="layout" value="vertical" <?= ($_GET['layout'] == 'vertical')?" checked ":""?> > Vertical-->
                 <!--</div>-->
-                
-                <div id="content">
+                >
                     <select name="category">
                         <option value=""> Select One </option>
                         <option value="ocean">Sea</option>
@@ -85,7 +80,7 @@
                     </select>
                     
                     <input type="submit" value="Submit" name="submitButton"/>
-                </div>
+                    
                 <div style="clear:both"></div>
                 
             </form>
