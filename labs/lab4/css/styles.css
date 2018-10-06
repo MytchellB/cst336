@@ -6,18 +6,19 @@
     }
     
     input {
-        font-size: 3em;
-        color: black;
-    }
-    
-    form {
-        border-radius:10px;
-    }
-    
-    input {
         font-size: 2em;
         color: black;
         border-radius:20px;
+    }
+    
+    #layout {
+        display:inline-block; 
+        color:black; 
+        text-align:left; 
+        background-color:white; 
+        padding:10px; 
+        border-radius:10px;
+        overflow:auto;
     }
     
     #carousel-example-generic {
@@ -28,18 +29,4 @@
     #carouselExampleIndicators{
         width:700px;
         margin:0 auto;
-    }
-    
-    #content{
-        margin: 0 auto;
-    }
-    
-    #layoutDiv {
-        display:inline-block; 
-        color:black; 
-        text-align:left; 
-        background-color:white; 
-        padding:10px; 
-        border-radius:10px;
-        overflow:auto;
     }

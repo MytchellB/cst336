@@ -45,6 +45,7 @@
      <title> Lab 4: Pixabay Slideshow </title>
      
      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     <link rel="stylesheet" href="css/styles.css" type="text/css" />
      
      <style>
          body {
@@ -52,36 +53,30 @@
              background-size: cover;
          }
      </style>
-     <link rel="stylesheet" href="css/styles.css" type="text/css" />
+     
     </head>
 
     <body>
+        <br/><br/>
             <form action="index.php" method="GET">
                 <input type="text" name="keyword" size="15" placeholder="Keyword" value="<?=$_GET['keyword']?>"/>
                 
-                <div id="layoutDiv">
-                    <input type="radio" name="layout" value="horizontal" id="layout_h" checked/>
-                    <label for="layout_h"> Horizontal </label><br />
-                    <input type="radio" name="layout" value="vertical" id="layout_v"   />
-                    <label for="layout_v"> Vertical </label><br />
+                <div id="layout">
+                    <input type="radio" name="layout" value="horizontal" <?= ($_GET['layout'] == 'horizontal')?" checked ":""?> > Horizontal <br/>
+                    <input type="radio" name="layout" value="vertical" <?= ($_GET['layout'] == 'vertical')?" checked ":""?> > Vertical
                 </div>
-                
-                <!--<div id="layout">-->
-                <!--    <input type="radio" name="layout" value="horizontal" <?= ($_GET['layout'] == 'horizontal')?" checked ":""?> > Horizontal-->
-                <!--    <input type="radio" name="layout" value="vertical" <?= ($_GET['layout'] == 'vertical')?" checked ":""?> > Vertical-->
-                <!--</div>-->
-                >
-                    <select name="category">
-                        <option value=""> Select One </option>
-                        <option value="ocean">Sea</option>
-                        <option>Mountains</option>
-                        <option>Forest</option>
-                        <option  <?= ($_GET['category'] == 'Sky')?"Sky":""?> >Sky</option>
-                    </select>
+                <br/><br/>
+
+                <select name="category">
+                    <option value=""> Select One </option>
+                    <option value="ocean">Sea</option>
+                    <option>Mountains</option>
+                    <option>Forest</option>
+                    <option  <?= ($_GET['category'] == 'Sky')?"Sky":""?> >Sky</option>
+                </select>
+                <br/><br/>
                     
-                    <input type="submit" value="Submit" name="submitButton"/>
-                    
-                <div style="clear:both"></div>
+                <input type="submit" value="Submit" name="submitButton"/>
                 
             </form>
             
