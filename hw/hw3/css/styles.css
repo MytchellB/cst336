@@ -1,0 +1,11 @@
+            body {
+                background-color: powderblue;
+                color: black;
+                font-size: 2em;
+            }
+            
+            header, main, nav, footer{
+                text-align:center;
+                display:flex;
+                justify-content:center;
+            }
