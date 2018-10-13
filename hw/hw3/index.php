@@ -11,11 +11,14 @@
     
     <body>
         <main>
-            <form method="GET" id="form">
-                Text to Convert: <input type="text" name="myText"><br>
-                <input type="radio" name="pigLatin" value="pig latin" checked> Pig Latin<br>
-                <input type="submit" value="Submit">
-            </form>
+            
+            <div>
+                <form method="GET" id="form">
+                    Text to Convert: <input type="text" name="myText"><br>
+                    <input type="radio" name="pigLatin" value="pig latin" checked> Pig Latin<br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </main>
     </body>
 
