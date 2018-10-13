@@ -1,3 +1,5 @@
 <?php
-    
+    function convertToPigLation($word){
+        
+    }
 ?>
