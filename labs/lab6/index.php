@@ -56,6 +56,7 @@
             </form>
             <?= filterProducts(); ?>
       	    
+      	    
         </main>
          <br/><br/>
     </body>
