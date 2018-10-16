@@ -24,8 +24,8 @@
                 <div id="output">
                     <?php
                         
-                        if( empty($_GET['myText'])){
-                            echo "You haven't entered anything, try harder.";
+                        if( empty($_GET['myText']) || ( !isset($_GET['both']) && !isset($_GET['alter'])) ){
+                            echo "You need to enter text and select an option, try harder.";
                         }
                         else if( $_GET['both'] == 'on'){
                             $newWord = convertToPigLatin($_GET['myText']);
