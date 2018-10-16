@@ -4,7 +4,7 @@
                 font-size: 2em;
             }
             
-            header, main, nav, footer{
+            main, nav, footer{
                 text-align:center;
                 display:flex;
                 justify-content:center;
@@ -16,5 +16,39 @@
             
             input{ 
                 margin-bottom: 10px; 
-                
+                font-size: 1em;
+            }
+            
+            #output{
+                background-color: blue;
+                color: white;
+                font-size: 2.5em;
+                margin-top: 5px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            
+            footer{
+                font-size: .75em;
+                position:absolute;
+                bottom:0;
+                width:70%;
+                height:60px;
+            }
+            
+            header {
+                text-align:center;
+                color: green;
+                font-size: 2em;
+                animation-name: example;
+                animation-duration: 4s;
+                animation-delay: 2s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+            
+            @keyframes example {
+                from {color: green;}
+                to {color: black;}
             }

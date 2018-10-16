@@ -11,13 +11,48 @@
     
     <body>
         <main>
-            
             <div>
+                <header>Welcome to Word Converter!</header>
                 <form method="GET" id="form">
-                    Text to Convert: <input type="text" name="myText"><br>
-                    <input type="radio" name="pigLatin" value="pig latin" checked> Pig Latin<br>
+                    Word to Convert: <input type="text" name="myText" value='<?= $_GET['myText'] ?>' ><br>
+                    <input type="radio" name="alter" value="pig latin" <?= ($_GET['alter'] == 'pig latin')?" checked ":""?> > Pig Latin<br>
+                    <input type="radio" name="alter" value="reverse" <?= ($_GET['alter'] == 'reverse')?" checked ":""?> > Reverse<br>
+                    <input type="radio" name="alter" value="remove vowels" <?= ($_GET['alter'] == 'remove vowels')?" checked ":""?> > Remove Vowels<br>
+                    <input type="checkbox" name="both" <?= ($_GET['both'] == 'on')?" checked ":""?> />Apply everything?<br>
                     <input type="submit" value="Submit">
                 </form>
+                <div id="output">
+                    <?php
+                        
+                        if( empty($_GET['myText'])){
+                            echo "You haven't entered anything, try harder.";
+                        }
+                        else if( $_GET['both'] == 'on'){
+                            $newWord = convertToPigLatin($_GET['myText']);
+                            echo "Pig Latinized: ".$newWord." <br>";
+                            $newWord = ucwords(strtolower(reverseWord($newWord)));
+                            echo "Reversed: ".$newWord." <br>";
+                            echo "Word has been converted to pig latin, reversed, and had it's vowels removed:<br>";
+                            echo ucwords(strtolower(removeVowels($newWord)));
+                        }
+                        else if ($_GET['alter'] == 'pig latin'){
+                            echo "Word has been converted to pig latin:<br>";
+                            echo convertToPigLatin($_GET['myText']);
+                        }
+                        else if ($_GET['alter'] == 'reverse'){
+                            echo "Word has been reversed:<br>";
+                            echo ucwords(reverseWord($_GET['myText']));
+                        }
+                        else if ($_GET['alter'] == 'remove vowels'){
+                            echo "Word has had vowels removed:<br>";
+                            echo ucwords(removeVowels($_GET['myText']));
+                        }
+                    ?>
+                </div>
+                <footer>
+                    Takes in a user entered word, and converts it using whatever method the user selects.<br>
+                    For educational purposes only - Mytchell Beaton
+                </footer>
             </div>
         </main>
     </body>
