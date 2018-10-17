@@ -44,7 +44,7 @@
                             echo ucwords(reverseWord($_GET['myText']));
                         }
                         else if ($_GET['alter'] == 'remove vowels'){
-                            echo "Word has had vowels removed:<br>";
+                            echo ">Word has had vowels removed:<br>";
                             echo ucwords(removeVowels($_GET['myText']));
                         }
                     ?>
