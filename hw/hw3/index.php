@@ -16,7 +16,7 @@
                 <form method="GET" id="form">
                     Word to Convert: <input type="text" name="myText" value='<?= $_GET['myText'] ?>' ><br>
                     <input type="radio" name="alter" value="pig latin" <?= ($_GET['alter'] == 'pig latin')?" checked ":""?> > Pig Latin<br>
-                    <input type="radio" name="alter" value="reverse" <?= ($_GET['alter'] == 'reverse')?" checked ":""?> > Reverse<br>s
+                    <input type="radio" name="alter" value="reverse" <?= ($_GET['alter'] == 'reverse')?" checked ":""?> > Reverse<br>
                     <input type="radio" name="alter" value="remove vowels" <?= ($_GET['alter'] == 'remove vowels')?" checked ":""?> > Remove Vowels<br>
                     <input type="checkbox" name="both" <?= ($_GET['both'] == 'on')?" checked ":""?> />Apply everything?<br>
                     <input type="submit" value="Submit">
