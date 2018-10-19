@@ -29,8 +29,7 @@ function filterProducts() {
     //This SQL works but it doesn't prevent SQL INJECTION (due to the single quotes)
     //$sql = "SELECT * FROM om_product
     //        WHERE productName LIKE '%$product%'";
-    
-
+  
     $sql = "SELECT * FROM om_product WHERE 1"; //Gettting all records from database
     
     if (!empty($product)){
@@ -41,30 +40,39 @@ function filterProducts() {
     
     if (!empty($_GET['category'])){
         //This SQL prevents SQL INJECTION by using a named parameter
-         $sql .=  " AND catId = :category";
+         $sql .=  " AND catId =  :category";
           $namedParameters[':category'] = $_GET['category'] ;
     }
     
-    if (!empty($_GET['priceFrom']) && !empty($_GET['priceTo'])){
-        $sql .= " AND price >= :priceFrom AND price <= :priceTo";
-        $namedParameters[':priceFrom'] = $_GET['priceFrom'];
-        $namedParameters[':priceTo'] = $_GET['priceTo'];
-    }
+    //echo $sql;
     
-    if(isset($_GET['orderBy'])){
-        if($_GET['orderBy'] == 'productPrice'){
-            $sql .= " ORDER BY price ";
+    if (isset($_GET['orderBy'])) {
+        
+        if ($_GET['orderBy'] == "productPrice") {
+            
+            $sql .= " ORDER BY price";
+        } else {
+            
+              $sql .= " ORDER BY productName";
         }
-        else{
-            $sql .= " ORDER BY productName ";
-        }
+        
+        
     }
-    
 
     $stmt = $dbConn->prepare($sql);
     $stmt->execute($namedParameters);
     $records = $stmt->fetchAll(PDO::FETCH_ASSOC);  
-    print_r($records);
+    //print_r($records);
+    
+    
+    foreach ($records as $record) {
+        
+        echo "<a href='productInfo.php?productId=".$record['productId']."'>";
+        echo $record['productName'];
+        echo "</a> ";
+        echo $record['productDescription'] . " $" .  $record['price'] .   "<br>";   
+        
+    }
 
 
 }
@@ -89,21 +97,24 @@ function filterProducts() {
             <select name="category">
                <option value=""> Select one </option>  
                <?=displayCategories()?>
-            </select>
+            </select><br>
             
+            Price: From: <input type="text" name="priceFrom"  /> 
+             To: <input type="text" name="priceTo"  />
             <br>
-            Price From: <input type="text" name="priceFrom" placeholder="" />
-            To: <input type="text" name="priceTo"/><br>
-            
             Order By:
             Price <input type="radio" name="orderBy" value="productPrice">
-            Name <input type="radio" name="orderBy" value="productName"><br>
-            
+            Name <input type="radio" name="orderBy" value="productName">
+            <br>
             <input type="submit" name="submit" value="Search!"/>
         </form>
-        
+        <br>
+        <hr>
         
         <?= filterProducts() ?>
+        
+    
+
 
     </body>
 </html>
