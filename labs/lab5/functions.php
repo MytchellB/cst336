@@ -24,7 +24,7 @@
                 // Create separate form for delete
                 echo "<form method='post'>";
                 echo "<input type='hidden' name='removeId' value='$itemId'>"; // Hidden itemId to update correct item
-                echo '<td><button class="btn btn-danger">Delete</button></td>';
+                echo '<td><button class="btn btn-danger">Remove</button></td>';
                 echo '</form>';
                 
                 echo '</tr>';
