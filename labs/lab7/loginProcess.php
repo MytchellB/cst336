@@ -1,4 +1,5 @@
 <?php 
+session_start();
 
 include '../../inc/dbConnection.php';
 $dbConn = startConnection("ottermart");
@@ -14,4 +15,12 @@ $stmt->execute();
 $record = $stmt->fetch(PDO::FETCH_ASSOC); // We're expecting just one record.
 
 print_r($record);
+
+if (empty($record)) {
+    echo "Incorrect username or password";
+}
+else {
+    $_SESSION['adminFullName'] = $record['firstName'] . " " . $record['lastName'];
+    header('Location: admin.php'); // redirects to another program
+}
 ?>
