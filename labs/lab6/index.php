@@ -83,6 +83,10 @@ function filterProducts() {
 <html>
     <head>
         <title> Lab 6: Ottermart Product Search</title>
+        
+        <style>
+            <link rel="stylesheet" href="css/styles.css" type="text/css" />
+        </style>
     </head>
     <body>
         
