@@ -1,9 +1,9 @@
 <?php
 
-    function startConnection($dbname="ottermart") {
+    function startConnection($dbname) {
         //Creating database connection
         $host = "localhost";
-        $dbname = "ottermart";
+        // $dbname = "ottermart";
         $username = "root";
         $password = "";
         

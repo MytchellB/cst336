@@ -522,3 +522,21 @@ Stack trace:
 [24-Sep-2018 20:05:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/p3/reviews.php:0
 [24-Sep-2018 20:05:40 UTC] PHP   2. movieReviews() /home/ubuntu/workspace/cst336/practice/p3/reviews.php:65
 [08-Oct-2018 21:52:17 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ubuntu/workspace/cst336/practice/zodiac/index.php on line 19
+[24-Oct-2018 19:05:07 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ottermart.mp_county' doesn't exist' in /home/ubuntu/workspace/cst336/practice/p6/midterm_practice2.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p6/midterm_practice2.php(11): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/practice/p6/midterm_practice2.php(34): executeSQL()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p6/midterm_practice2.php on line 11
+[24-Oct-2018 19:05:51 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ottermart.mp_county' doesn't exist' in /home/ubuntu/workspace/cst336/practice/p6/midterm_practice2.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p6/midterm_practice2.php(11): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/practice/p6/midterm_practice2.php(34): executeSQL()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p6/midterm_practice2.php on line 11
+[24-Oct-2018 19:07:24 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ottermart.mp_county' doesn't exist' in /home/ubuntu/workspace/cst336/practice/p6/midterm_practice2.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p6/midterm_practice2.php(11): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/practice/p6/midterm_practice2.php(34): executeSQL()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p6/midterm_practice2.php on line 11
