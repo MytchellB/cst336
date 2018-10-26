@@ -30,18 +30,28 @@ function filterProducts() {
     //$sql = "SELECT * FROM om_product
     //        WHERE productName LIKE '%$product%'";
   
-    $sql = "SELECT * FROM om_product"; //Gettting all records from database
+    $sql = "SELECT * FROM om_product WHERE 1"; //Gettting all records from database
     
     if (!empty($product)){
         //This SQL prevents SQL INJECTION by using a named parameter
-         $sql .=  " AND productName LIKE :product";
+         $sql .=  " AND productName LIKE :product OR productDescription LIKE :product";
          $namedParameters[':product'] = "%$product%";
     }
     
     if (!empty($_GET['category'])){
         //This SQL prevents SQL INJECTION by using a named parameter
-         $sql .=  " AND catId =  :category";
-          $namedParameters[':category'] = $_GET['category'] ;
+         $sql .=  " AND catId = :category";
+         $namedParameters[':category'] = $_GET['category'] ;
+    }
+    
+    if ( !empty($_GET['priceFrom']) ) {
+         $sql .=  " AND price >= :priceFrom";
+         $namedParameters[':priceFrom'] = $_GET['priceFrom'] ;
+    }
+    
+    if ( !empty($_GET['priceTo']) ) {
+         $sql .=  " AND price <= :priceTo";
+         $namedParameters[':priceTo'] = $_GET['priceTo'] ;
     }
     
     //echo $sql;
@@ -64,14 +74,15 @@ function filterProducts() {
     $records = $stmt->fetchAll(PDO::FETCH_ASSOC);  
     //print_r($records);
     
-    
-    foreach ($records as $record) {
-        
-        echo "<a href='productInfo.php?productId=".$record['productId']."'>";
-        echo $record['productName'];
-        echo "</a> ";
-        echo $record['productDescription'] . " $" .  $record['price'] .   "<br>";   
-        
+    if (isset($_GET['category']) || !empty($_GET['productName'])) {
+        foreach ($records as $record) {
+            
+            echo "<a href='productInfo.php?productId=".$record['productId']."'>";
+            echo $record['productName'];
+            echo "</a> ";
+            echo $record['productDescription'] . " $" .  $record['price'] .   "<br>";   
+            
+        }
     }
 
 
