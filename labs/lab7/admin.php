@@ -1,25 +1,14 @@
 <?php
 session_start();
 
+if(!isset($_SESSION['adminFullName'])) {
+    header("Location: index.php"); // Redirects users who haven't logged in.
+    exit;
+}
+
 include '../../inc/dbConnection.php';
 $dbConn = startConnection("ottermart");
-
-function displayAllProducts(){
-    global $dbConn;
-    
-    $sql = "SELECT * FROM om_product ORDER BY productName";
-    $stmt = $dbConn->prepare($sql);
-    $stmt->execute();
-    $records = $stmt->fetchAll(PDO::FETCH_ASSOC); //we're expecting multiple records
-
-    foreach ($records as $record) {
-        
-        echo "[<a href='updateProduct.php'>Update</a>]";
-        echo "[<a href='deleteProduct.php'>Delete</a>]";
-        echo $record['productName'] . "  " . $record[price]   . "<br>";
-        
-    }
-}
+include 'inc/functions.php';
 
 ?>
 
@@ -27,6 +16,11 @@ function displayAllProducts(){
 <html>
     <head>
         <title> Admin Main Page </title>
+        <style>
+            form {
+                display: inline-block;
+            }
+        </style>
     </head>
     <body>
         
