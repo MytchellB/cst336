@@ -507,3 +507,103 @@ Stack trace:
 [31-Oct-2018 21:22:27 UTC] PHP Fatal error:  Call to undefined function validateSession() in /home/ubuntu/workspace/cst336/labs/lab7/admin.php on line 3
 [31-Oct-2018 21:22:27 UTC] PHP Stack trace:
 [31-Oct-2018 21:22:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:0
+[07-Nov-2018 22:25:57 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php:27
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php(27): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php on line 27
+[07-Nov-2018 22:27:55 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php:27
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php(27): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php on line 27
+[07-Nov-2018 22:28:05 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php:27
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php(27): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php on line 27
+[07-Nov-2018 22:28:35 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php:27
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php(27): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php on line 27
+[07-Nov-2018 22:28:47 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php:27
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php(27): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php on line 27
+[07-Nov-2018 22:36:51 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php:27
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php(27): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php on line 27
+[07-Nov-2018 22:38:17 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php:27
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php(27): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php on line 27
+[07-Nov-2018 22:38:56 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php:27
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php(27): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php on line 27
+[07-Nov-2018 22:40:49 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php:27
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php(27): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php on line 27
+[07-Nov-2018 22:41:44 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php:27
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php(27): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php on line 27
+[07-Nov-2018 22:42:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ottermart.m_product' doesn't exist' in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php:27
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php(27): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php on line 27
+[07-Nov-2018 22:43:45 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ottermart.m_product' doesn't exist' in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php:28
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php(28): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php on line 28
+[07-Nov-2018 22:44:30 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ottermart.m_product' doesn't exist' in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php:27
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php(27): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php on line 27
+[07-Nov-2018 22:44:48 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php:27
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php(27): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php on line 27
+[07-Nov-2018 22:45:09 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ottermart.m_product' doesn't exist' in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php:27
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php(27): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php on line 27
+[07-Nov-2018 22:45:19 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ottermart.m_product' doesn't exist' in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php:27
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php(27): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php on line 27
+[07-Nov-2018 22:45:20 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ottermart.m_product' doesn't exist' in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php:27
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php(27): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php on line 27
+[07-Nov-2018 22:45:20 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ottermart.m_product' doesn't exist' in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php:27
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php(27): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php on line 27
+[07-Nov-2018 22:45:21 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ottermart.m_product' doesn't exist' in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php:27
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php(27): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php on line 27
+[07-Nov-2018 22:45:29 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php:27
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php(27): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php on line 27
