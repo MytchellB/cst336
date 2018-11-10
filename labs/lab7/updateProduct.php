@@ -7,25 +7,6 @@ include 'inc/functions.php';
 validateSession();
 
 if (isset($_GET['updateProduct'])){  //user has submitted update form
-    $productName = $_GET['productName'];
-    $description =  $_GET['description'];
-    $price =  $_GET['price'];
-    $catId =  $_GET['catId'];
-    $image = $_GET['productImage'];
-    
-    //UPDATE `om_product` SET `price` = '300.00' WHERE `om_product`.`productId` = 1;
-    $sql = "UPDATE om_product SET productName = :productName,
-                                   productDescription = :productDescription";
-    $np = array();
-    $np[':productName'] = $productName;
-    $np[':productDescription'] = $description;
-    // $np[":productImage"] = $image;
-    // $np[":price"] = $price;
-    // $np[":catId"] = $catId;
-    
-    $stmt = $dbConn->prepare($sql);
-    $stmt->execute($np);
-}
 
 if (isset($_GET['productId'])) {
 
@@ -34,8 +15,27 @@ if (isset($_GET['productId'])) {
  // print_r($productInfo);
     
 }
-
-
+    $productName = $_GET['productName'];
+    $description =  $_GET['description'];
+    $price =  $_GET['price'];
+    $catId =  $_GET['catId'];
+    $image = $_GET['productImage'];
+    
+    //UPDATE `om_product` SET `price` = '300.00' WHERE `om_product`.`productId` = 1;
+    $sql = "UPDATE om_product SET productName = :productName,
+                                    productDescription = :productDescription
+                                     WHERE productId = :productId";
+    $np = array();
+    $np[':productName'] = $productName;
+    $np[':productDescription'] = $description;
+    $np[':productId'] = $productInfo;
+    // $np[":productImage"] = $image;
+    // $np[":price"] = $price;
+    // $np[":catId"] = $catId;
+    
+    $stmt = $dbConn->prepare($sql);
+    $stmt->execute($np);
+}
 ?>
 
 <!DOCTYPE html>

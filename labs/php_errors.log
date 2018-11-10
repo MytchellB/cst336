@@ -615,3 +615,9 @@ Stack trace:
 #0 /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php(27): PDOStatement->execute(Array)
 #1 {main}
   thrown in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php on line 27
+[10-Nov-2018 03:12:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE productId = '59'
+                                SET productName = 'test',' at line 1' in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php:30
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php(30): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php on line 30
