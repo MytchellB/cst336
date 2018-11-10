@@ -15,12 +15,8 @@ validateSession();
 <html>
     <head>
         <title> Admin Main Page </title>
-        <style>
-            form {
-                display: inline-block;
-            }
-        </style>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="css/styles.css" type="text/css" />
         
         <script>
         
@@ -55,8 +51,9 @@ validateSession();
           </form>
 
            <br><br>
-        
-        <?= displayAllProducts() ?>
+        <div id="displayProducts">
+            <?= displayAllProducts() ?>
+        </div>
         
 
 <!-- Modal -->

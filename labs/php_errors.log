@@ -607,3 +607,11 @@ Stack trace:
 #0 /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php(27): PDOStatement->execute(Array)
 #1 {main}
   thrown in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php on line 27
+[10-Nov-2018 01:46:58 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/cst336/labs/lab7/loginProcess.php on line 5
+[10-Nov-2018 01:47:06 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/cst336/labs/lab7/loginProcess.php on line 5
+[10-Nov-2018 01:47:17 UTC] PHP Parse error:  syntax error, unexpected 'stylesheet' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/cst336/labs/lab7/loginProcess.php on line 5
+[10-Nov-2018 01:51:43 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ottermart.m_product' doesn't exist' in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php:27
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php(27): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php on line 27

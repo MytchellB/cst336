@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+input {
+    margin-top: 5px;
+}
+
+form {
+    display: inline-block;
+}
+
