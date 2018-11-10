@@ -31,6 +31,7 @@ if (isset($_GET['updateProduct'])){  //user has submitted update form
 
     $stmt = $dbConn->prepare($sql);
     $stmt->execute($np);
+    header('Location: admin.php'); // redirects to another program
 }
 
 if (isset($_GET['productId'])) {
