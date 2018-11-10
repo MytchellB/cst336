@@ -21,10 +21,17 @@ if (isset($_GET['updateProduct'])){  //user has submitted update form
                catId = :catId,
                productImage = :productImage
             WHERE productId = " . $_GET['productId'];
-         
-    
-}
+            
+    $np = array();
+    $np[':productName'] = $productName;
+    $np[':productDescription'] = $description;
+    $np[':price'] = $price;
+    $np[':catId'] = $catId;
+    $np[':productImage'] = $image;
 
+    $stmt = $dbConn->prepare($sql);
+    $stmt->execute($np);
+}
 
 if (isset($_GET['productId'])) {
 
@@ -34,7 +41,6 @@ if (isset($_GET['productId'])) {
     
     
 }
-
 
 ?>
 
