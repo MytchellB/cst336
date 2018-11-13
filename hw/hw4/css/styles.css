@@ -1,0 +1,58 @@
+            body {
+                background-color: powderblue;
+                color: black;
+                font-size: 2em;
+            }
+            
+            main, nav, footer{
+                text-align:center;
+                display:flex;
+                justify-content:center;
+            }
+            
+            form{
+                margin-top: 50px;
+            }
+            
+            input{ 
+                margin-bottom: 10px; 
+                font-size: 1em;
+            }
+            
+            #output{
+                background-color: black;
+                color: white;
+                font-size: 2.5em;
+                margin-top: 5px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            
+            h5{
+                font-size: .5em;
+            }
+            
+            footer{
+                font-size: .75em;
+                position:absolute;
+                bottom:0;
+                width:70%;
+                height:60px;
+            }
+            
+            header {
+                text-align:center;
+                color: green;
+                font-size: 2em;
+                animation-name: example;
+                animation-duration: 4s;
+                animation-delay: 2s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+            
+            @keyframes example {
+                from {color: green;}
+                to {color: black;}
+            }
