@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8" /> 
         <title>Homework 3 - CST 336</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" type="text/css" />
         <link href="css/styles.css" rel="stylesheet" />
         <?php
             include 'functions/functions.php';
@@ -27,6 +28,7 @@
                     
                 </div>
                 <footer>
+                    Please enter your word, then hit submit. Then click the buttons to apply changes to the word in real time.<br>
                     Takes in a user entered word, and converts it using whatever method the user selects.<br>
                     For educational purposes only - Mytchell Beaton
                 </footer>
@@ -44,28 +46,54 @@
 
     function assignOption(option) {
         option = option;
-        $("#output").html(option);
+        if(option == "pig latin"){
+            word = convertToPigLatinJS(word);
+            $("#output").html(word);
+        }
+        else if(option == "reverse"){
+            word = reverseWordJS(word);
+            $("#output").html(word);
+        }
+        else if(option == "remove vowels"){
+            word = removeVowelsJS(word);
+            $("#output").html(word);
+        }
+        else if(option == "on"){
+            word = convertToPigLatinJS(word);
+            word = reverseWordJS(word);
+            word = removeVowelsJS(word);
+            $("#output").html(word);
+        }
     }
     
-    // if ( word == ""){
-    //     $("#output").html("Please enter a word");
-    // }
-    // else{
-    //     $("#output").html(word);
-    // }
-    
-    // var word = document.getElementById("form").elements[0].value;
-    // $("#output").html(word);
-    
-    // for(var i = 1; i < 4; i++) {
-    //     if(document.getElementById("form").elements[i].checked() == "true") {
-    //         $("#output").html(document.getElementById("form").elements[i].value);
-    //     }
-    // }
+    if(word == ""){
+        $("#output").html("Please enter text and then submit.<br>Instructions below");
+    }
     
     function validateForm(){
-        // var x = document.getElementById("form").elements[0].value;
-        // $("#output").html(x);
+
+    }
+    
+    function convertToPigLatinJS(word){
+        var first = word.substr(0, 1);
+        var last = word.substr(1, word.length);
+        return last + first + 'ay';
+    }
+    
+    function reverseWordJS(word){
+        var newWord = "";
+        for(var i = (word.length - 1); i >= 0; i--){
+            newWord += word[i];
+        }
+        return newWord;
+    }
+    
+    function removeVowelsJS(word){
+        var vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+        for(var i = 0; i < vowels.length; i++){
+            word = word.replace(vowels[i], "");
+        }
+        return word;
     }
 
 </script>
