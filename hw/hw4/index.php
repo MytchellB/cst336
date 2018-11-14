@@ -28,7 +28,6 @@
                     
                 </div>
                 <footer>
-                    Please enter your word, then hit submit. Then click the buttons to apply changes to the word in real time.<br>
                     Takes in a user entered word, and converts it using whatever method the user selects.<br>
                     For educational purposes only - Mytchell Beaton
                 </footer>
@@ -67,7 +66,7 @@
     }
     
     if(word == ""){
-        $("#output").html("Please enter text and then submit.<br>Instructions below");
+        $("#output").html("Please enter your word, and hit submit.<br>Then click the buttons to apply changes to the word in real time.");
     }
     
     function validateForm(){
