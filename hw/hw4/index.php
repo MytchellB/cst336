@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" /> 
-        <title>Homework 3 - CST 336</title>
+        <title>Homework 4 - CST 336</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" type="text/css" />
         <link href="css/styles.css" rel="stylesheet" />
         <?php
