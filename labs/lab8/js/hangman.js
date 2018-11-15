@@ -43,6 +43,20 @@ function createLetters() {
     }
 }
 
+// Checks to see if the selected letter exists in the selectedWord
+function checkLetter(letter) {
+    var positions = new Array();
+    
+    // Put all the positions the lettter exists in an array
+    for (var i = 0; i < selectedWord.length; i++) {
+        console.log(selectedWord);
+        if (letter == selectedWord[i]){
+            positions.push(i);
+        }
+    }
+}
+
 $(".letter").click(function(){
     console.log($(this).attr("id"));
 });
+
