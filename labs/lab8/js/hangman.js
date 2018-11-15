@@ -4,6 +4,11 @@ var selectedHint = "";
 var board = [];
 var remainGuesses = 6;
 var words = ["snake", "monkey", "beetle"];
+
+// Creating an array of variable letters
+var alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 
+                'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 
+                'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
             
 // Listeners
 window.onload = startGame();
@@ -31,3 +36,13 @@ function updateBoard() {
         document.getElementById("word").innerHTML += letter + " ";
     }
 }
+
+function createLetters() {
+    for (var letter of alphabet) {
+        $("#letters").append("<button class='letter' id='" + letter + "'>" + letter + "</button>");
+    }
+}
+
+$(".letter").click(function(){
+    console.log($(this).attr("id"));
+});
