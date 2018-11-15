@@ -1,4 +1,3 @@
 function myfunc() {
-    document.write("hello");
+    document.write("hello world");
 }
-document.write("hello");

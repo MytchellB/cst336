@@ -4,7 +4,7 @@
         <meta charset="utf-8" /> 
         <title>Final Project - CST 336</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" type="text/css" />
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="styles/styles.css" rel="stylesheet" />
         <?php
             include 'inc/functions.php';
         ?>
@@ -17,7 +17,7 @@
         <main>
             <div>
                 <header>Welcome to Final Project!</header>
-                
+                <script>myfunc()</script>
                 <footer>
                     For educational purposes only - Mytchell Beaton
                 </footer>
