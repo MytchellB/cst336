@@ -43,6 +43,7 @@ function updateBoard() {
     }
     
     $("#word").append("<br />");
+    $("#hint").append("<button class='btn btn-success' id='hints'>Display Hint</button>")
     $("#word").append("<span class='hint' >Hint: " + selectedHint + "</span");
 }
 
@@ -111,7 +112,9 @@ function disableButton(btn) {
 }
 
 function displayHint() {
+    $('.hint').style.display = 'visible';
     remainGuesses -= 1;
+    $('#hints').style.display = 'none';
 }
 
 
@@ -130,6 +133,6 @@ $(".letter").click(function() {
     disableButton($(this));
 })
 
-$(".hint").click(function() {
+$("#hints").click(function() {
     displayHint();
 })
