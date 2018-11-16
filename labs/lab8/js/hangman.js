@@ -3,9 +3,11 @@ var selectedWord = "";
 var selectedHint = "";
 var board = [];
 var remainGuesses = 6;
+var isHintDisplayed = false;
 var words = [{ word: "snake", hint: "It's a reptile" },
              { word: "monkey", hint: "It's a mammal" },
              { word: "beetle", hint: "It's an insect" }];
+var wordsGuessed = new Array();
 
 // Creating an array of variable letters
 var alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 
@@ -43,8 +45,13 @@ function updateBoard() {
     }
     
     $("#word").append("<br />");
-    $("#hint").append("<button class='btn btn-success' id='hints'>Display Hint</button>")
+    if (isHintDisplayed == false) {
+        $("#hint").append("<button class='btn btn-success' id='hints'>Display Hint</button>");
+    }
     $("#word").append("<span class='hint' >Hint: " + selectedHint + "</span");
+    if (isHintDisplayed == true){
+        $('.hint').show();
+    }
 }
 
 function createLetters() {
@@ -119,6 +126,7 @@ function displayHint() {
     remainGuesses -= 1;
     $('#hints').hide();
     updateMan();
+    isHintDisplayed = true;
 }
 
 
