@@ -3,7 +3,9 @@ var selectedWord = "";
 var selectedHint = "";
 var board = [];
 var remainGuesses = 6;
-var words = ["snake", "monkey", "beetle"];
+var words = [{ word: "snake", hint: "It's a reptile" },
+             { word: "monkey", hint: "It's a mammal" },
+             { word: "beetle", hint: "It's an insect" }];
 
 // Creating an array of variable letters
 var alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 
@@ -18,6 +20,7 @@ function startGame() {
     pickWord();
     initBoard();
     updateBoard();
+    createLetters();
 }
 
 function initBoard() {
@@ -28,18 +31,24 @@ function initBoard() {
 
 function pickWord() {
     var randomInt = Math.floor(Math.random() * words.length);
-    selectedWord = words[randomInt];
+    selectedWord = words[randomInt].word.toUpperCase();
+    selectedHint = words[randomInt].hint;
 }
 
 function updateBoard() {
-    for (var letter of board) {
-        document.getElementById("word").innerHTML += letter + " ";
+    $("#word").empty();
+    
+    for (var i=0; i < board.length; i++) {
+        $("#word").append(board[i] + " ");
     }
+    
+    $("#word").append("<br />");
+    $("#word").append("<span class='hint' >Hint: " + selectedHint + "</span");
 }
 
 function createLetters() {
     for (var letter of alphabet) {
-        $("#letters").append("<button class='letter' id='" + letter + "'>" + letter + "</button>");
+        $("#letters").append("<button class='letter btn btn-success' id='" + letter + "'>" + letter + "</button>");
     }
 }
 
@@ -49,14 +58,78 @@ function checkLetter(letter) {
     
     // Put all the positions the lettter exists in an array
     for (var i = 0; i < selectedWord.length; i++) {
-        console.log(selectedWord);
         if (letter == selectedWord[i]){
             positions.push(i);
         }
     }
+    
+    if (positions.length > 0) {
+        updateWord(positions, letter);
+        
+        if (!board.includes('_')) {
+	        endGame(true);
+        }
+    }
+    else {
+        remainGuesses -= 1;
+        updateMan();
+    }
+    
+    if (remainGuesses <= 0) {
+        endGame(false);
+    }
 }
 
+// Update the current word then calls for a board update
+function updateWord(positions, letter) {
+    for (var pos of positions) {
+        board[pos] = letter;
+    }
+    
+    updateBoard();
+}
+
+// Calculates and updates the image for our stick man
+function updateMan() {
+    $("#hangImg").attr("src", "img/stick_" + (6 - remainGuesses) + ".png");
+}
+
+function endGame(win) {
+    $("#letters").hide();
+    
+    if(win) {
+        $('#won').show();
+    }
+    else {
+        $('#lost').show();
+    }
+}
+
+function disableButton(btn) {
+    btn.prop("disabled", true);
+    btn.attr("class", "btn btn-danger");
+}
+
+function displayHint() {
+    remainGuesses -= 1;
+}
+
+
+// Handlers
 $(".letter").click(function(){
     console.log($(this).attr("id"));
+    checkLetter($(this).attr("id"));
 });
 
+$(".replayBtn").on("click", function() {
+    location.reload();
+});
+
+$(".letter").click(function() {
+    checkLetter($(this).attr("id"));
+    disableButton($(this));
+})
+
+$(".hint").click(function() {
+    displayHint();
+})
