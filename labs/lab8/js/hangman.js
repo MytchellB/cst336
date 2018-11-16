@@ -57,7 +57,7 @@ function createLetters() {
 function checkLetter(letter) {
     var positions = new Array();
     
-    // Put all the positions the lettter exists in an array
+    // Put all the positions the letter exists in an array
     for (var i = 0; i < selectedWord.length; i++) {
         if (letter == selectedWord[i]){
             positions.push(i);
@@ -93,6 +93,9 @@ function updateWord(positions, letter) {
 // Calculates and updates the image for our stick man
 function updateMan() {
     $("#hangImg").attr("src", "img/stick_" + (6 - remainGuesses) + ".png");
+    if (remainGuesses < 0) {
+        $("#hangImg").attr("src", "img/stick_6.png");
+    }
 }
 
 function endGame(win) {
@@ -112,9 +115,10 @@ function disableButton(btn) {
 }
 
 function displayHint() {
-    $('.hint').style.display = 'visible';
+    $('.hint').show();
     remainGuesses -= 1;
-    $('#hints').style.display = 'none';
+    $('#hints').hide();
+    updateMan();
 }
 
 
@@ -128,7 +132,7 @@ $(".replayBtn").on("click", function() {
     location.reload();
 });
 
-$(".letter").click(function() {
+$(".letter").unbind('click').click(function() {
     checkLetter($(this).attr("id"));
     disableButton($(this));
 })
