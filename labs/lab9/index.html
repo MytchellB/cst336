@@ -45,10 +45,18 @@
                         dataType: "json",
                         data: { "zip": $("#zip").val() },
                         success: function(data,status) {
-                           
-                           //alert(data.city);
-                           $("#city").html(data.city);
-                           
+                            $("#zipError").html("");
+                            if( data.city == undefined ){ // if zip not found clear out fields and display error
+                                $("#zipError").html("Error: Zipcode not found");
+                                $("#city").html("");
+                                $("#latitude").html("");
+                                $("#longitude").html("");
+                            }
+                            else { // if zip code is found, display the data
+                               $("#city").html(data.city);
+                               $("#latitude").html(data.latitude);
+                               $("#longitude").html(data.longitude);
+                            }
                         
                         },
                         complete: function(data,status) { //optional, used for debugging purposes
@@ -89,14 +97,8 @@
             
             
         </script>
-        
-        <style>
-            
-            .error{
-                color: red;
-            }
-        </style>
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+        <link  href="css/styles.css" rel="stylesheet" type="text/css" />
     </head>
 
     <body>
@@ -110,12 +112,13 @@
                 Last Name:   <input type="text"><br> 
                 Email:       <input type="text"><br> 
                 Phone Number:<input type="text"><br><br>
-                Zip Code:    <input type="text" id="zip"><br>
+                Zip Code:    <input type="text" id="zip"><span id="zipError" class="error" ></span> 
+                <br>
                 City:  <span id="city"></span>
                 <br>
-                Latitude: 
+                Latitude: <span id="latitude"></span>
                 <br>
-                Longitude:
+                Longitude: <span id="longitude"></span>
                 <br><br>
                 State: 
                 <select id="state">

@@ -1,0 +1,17 @@
+            
+.error{
+    color: red;
+}
+            
+form {
+    border: 2.5px solid black;
+    padding: 15px;
+}
+            
+body {
+    padding-top: 25px;
+    width: 50%;
+    background-color: lightblue;
+    text-align: center;
+    margin-left: 25%;
+}
