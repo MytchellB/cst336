@@ -11,34 +11,28 @@
             function validateForm() {
                 
                 var username = $("#username").val();
-                var password1 = $("#password1").val();
-                var password2 = $("#password2").val();
-                
+                var password = $("#password").val();
+                var passwordAgain =  $("#passwordAgain").val();
                 
                 if (username.length < 5 ) {
+                    
                     $("#usernameError").html("Error: Username must be at least 5 characters long");
+                    
                 }
-                else{
-                    $("#usernameError").html("");
-                }
-                
-                if (password1.length < 3){
-                    $("#passwordError").html("Error: Password must be at least 3 characters long");
-                }
-                else{
-                    $("#passwordError").html("");
+                if (password.length < 3) {
+                    
+                    $("#passwordError").html("Error: Password not long enough, needs to be 3 characters long");
+                    
                 }
                 
-                if ( password1 == password2 ){
-                    $("#passwordError").html("");
-                }
-                else{
-                    $("#passwordError").html("Error: Passwords must be the same");
+                if(password != passwordAgain){
+                    $("#passwordMismatch").html("Error: Passwords must match");
                 }
                 
                 return false;
            
             }
+            
             
             $("document").ready(function(){  
                 
@@ -52,7 +46,9 @@
                         data: { "zip": $("#zip").val() },
                         success: function(data,status) {
                            
+                           //alert(data.city);
                            $("#city").html(data.city);
+                           
                         
                         },
                         complete: function(data,status) { //optional, used for debugging purposes
@@ -71,8 +67,13 @@
                         dataType: "json",
                         data: { "state": $("#state").val() },
                         success: function(data,status) {
-                           
-                            $("#county").html("<option>" + data[0].county + "</option>");
+                            $("#county").html("Select one");
+                        for(var i =0; i < data.length; i++){
+                            $("#county").append("<option>" + data[i].county + "</option>");
+                        }
+                            //alert(data[0].county);
+                           //$("#city").html(data.city);
+                         
                         
                         },
                         complete: function(data,status) { //optional, used for debugging purposes
@@ -82,9 +83,9 @@
                     });//ajax
                    
                 }); // state event
-                
-                
             });//documentReady
+            
+            
             
             
         </script>
@@ -110,7 +111,7 @@
                 Email:       <input type="text"><br> 
                 Phone Number:<input type="text"><br><br>
                 Zip Code:    <input type="text" id="zip"><br>
-                City:        <span id="city"></span>
+                City:  <span id="city"></span>
                 <br>
                 Latitude: 
                 <br>
@@ -127,12 +128,12 @@
                 
                 Select a County: <select id="county"></select><br>
                 
-                Desired Username: <input id="username" type="text">  <span id="usernameError" class="error" ></span> 
+                Desired Username: <input id="username"  type="text">  <span id="usernameError" class="error" ></span> 
                 <br>
                 
-                Password: <input id="password1" type="password"><span id="passwordError" class="error" ></span> <br>
+                Password: <input id="password" type="password"><span id="passwordError" class="error"></span><br>
                 
-                Type Password Again: <input id="password2" type="password"><br>
+                Type Password Again: <input id="passwordAgain" type="password"><span id="passwordMismatch" class="error"></span><br>
                 
                 <input type="submit" value="Sign up!">
             </fieldset>
