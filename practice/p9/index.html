@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+        <script>
+$("document").ready(function(){
+    $("#cakeQ").change(function() {
+        $.ajax({
+
+        type: "GET",
+        url: "",
+        dataType: "",
+        data: { "cakeQ":$("#cakeQ").val() },
+        success: function(data,status) {
+            $("#fruitTotal").html("$" + $("#cakeQ").val() * 30);
+        
+
+    },
+    complete: function(data,status) { //optional, used for debugging purposes
+   // alert(status);
+    }
+
+});//ajax
+      
+    });
+    
+    
+    
+    
+     $("#pinataQ").change(function() {
+        $.ajax({
+
+        type: "GET",
+        url: "",
+        dataType: "",
+        data: { "pinataQ":$("#pinataQ").val() },
+        success: function(data,status) {
+          $("#pinataTotal").html("$" + $("#pinataQ").val() * 20);
+
+    },
+    complete: function(data,status) { //optional, used for debugging purposes
+    //alert(status);
+    }
+
+});//ajax
+        $("#total").html("works");
+    });
+});
+</script>
+        <title> </title>
+        <h1>Cart</h1>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Unit Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>Fruit Cake</td>
+                <td>$30</td>
+                <td><form><input type="text" name="quantity" size="3" id="cakeQ"></input></form></td>
+                <td><label id= "fruitTotal"></label></td>
+            </tr>
+            <tr>
+                <td>Pinata (Medium Size)</td>
+                <td>$20</td>
+                <td><form><input type="text" name="quantity" size="3" id="pinataQ"/></form></td>
+                <td><label id= "pinataTotal"></label></td>
+            </tr>
+            <tr>
+                <td>Shipping</td>
+                <td></td>
+                <td></td>
+                <td id="shipping"></td>
+            </tr>
+            <tr>
+                <td>Subtotal</td>
+                <td></td>
+                <td></td>
+                <td id= "subtotal"></td>
+            </tr>
+            <tr>
+                <td>Tax(10%)</td>
+                <td></td>
+                <td></td>
+                <td id = "tax"></td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td></td>
+                <td></td>
+                <td ><label id="total"></label></td>
+            </tr>
+        </table>
+        <form>
+              <h2>Shipping & handling</h2>
+             <input type="radio" name = "option" value="high"/> Next-day Delivery: $15.00
+             <input type="radio" name = "option" value="middle"/> Three-day Delivery: $10.00
+             <input type="radio" name = "option" value="low"/>  <br/><br/>
+             <input type="submit" name="submitBtn" id = "b1" value="Confirm Purchase" />
+            
+        </form>
+       
+    </body>
+</html>
