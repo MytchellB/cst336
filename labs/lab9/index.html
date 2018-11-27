@@ -87,22 +87,33 @@
                     });//ajax
                 }); // state event
                 
-                $("#username").change(function(){
+                $("#username").change(function() {
+                var username = $("#username").val();
+                //alert(username);
                     $.ajax({
+    
                         type: "GET",
                         url: "checkUsername.php",
                         dataType: "json",
-                        data: { "username": $("#username").val() },
-                        success: function(data,status) {
-                            $("#county").html("Select one");
+                        data: { "username": username },
+                        success: function(data, status) {
+                         
+                            if(!data) {
+                                $("#usernameError").html("username is available");
+                                $("#usernameError").css("color", "green");
+                            } else {
+                                 $("#usernameError").html("username is not available");
+                                 $("#usernameError").css("color", "red");
+                                 
+                            }
                         
-
                         },
-                        complete: function(data,status) { //optional, used for debugging purposes
+                        complete: function(data, status) { //optional, used for debugging purposes
                             //alert(status);
                         }
-                    });//ajax
-                }); // username event
+                    }); //ajax
+                }); // username Event
+            
             });//documentReady
             
         </script>
