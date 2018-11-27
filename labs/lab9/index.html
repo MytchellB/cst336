@@ -86,6 +86,23 @@
                         }
                     });//ajax
                 }); // state event
+                
+                $("#username").change(function(){
+                    $.ajax({
+                        type: "GET",
+                        url: "checkUsername.php",
+                        dataType: "json",
+                        data: { "username": $("#username").val() },
+                        success: function(data,status) {
+                            $("#county").html("Select one");
+                        
+
+                        },
+                        complete: function(data,status) { //optional, used for debugging purposes
+                            //alert(status);
+                        }
+                    });//ajax
+                }); // username event
             });//documentReady
             
         </script>
