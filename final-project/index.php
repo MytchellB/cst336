@@ -16,8 +16,11 @@
     <body>
         <main>
             <div>
-                <header>Welcome to Final Project!</header>
-                <script>myfunc()</script>
+                <header>User Search!</header>
+                <a href="adminLogIn.php">Admin Log In</a>
+                <!--<script>myfunc()</script>-->
+                
+                <br><br><hr>
                 <footer>
                     For educational purposes only - Mytchell Beaton
                 </footer>
