@@ -3,7 +3,7 @@
     <head>
         <title> Admin Login </title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" type="text/css" />
-        <link rel="stylesheet" href="css/styles.css" type="text/css" />
+        <link rel="stylesheet" href="styles/styles.css" type="text/css" />
     </head>
     <body>
 

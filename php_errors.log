@@ -7,3 +7,48 @@
 [14-Nov-2018 22:39:13 UTC] PHP Warning:  include(): Failed opening 'functions/functions.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/final-project/index.php on line 9
 [14-Nov-2018 22:39:13 UTC] PHP Stack trace:
 [14-Nov-2018 22:39:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/index.php:0
+[30-Nov-2018 22:09:30 UTC] PHP Warning:  include(../../inc/dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/final-project/loginProcess.php on line 4
+[30-Nov-2018 22:09:30 UTC] PHP Stack trace:
+[30-Nov-2018 22:09:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/loginProcess.php:0
+[30-Nov-2018 22:09:30 UTC] PHP Warning:  include(): Failed opening '../../inc/dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/final-project/loginProcess.php on line 4
+[30-Nov-2018 22:09:30 UTC] PHP Stack trace:
+[30-Nov-2018 22:09:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/loginProcess.php:0
+[30-Nov-2018 22:09:30 UTC] PHP Fatal error:  Call to undefined function startConnection() in /home/ubuntu/workspace/cst336/final-project/loginProcess.php on line 5
+[30-Nov-2018 22:09:30 UTC] PHP Stack trace:
+[30-Nov-2018 22:09:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/loginProcess.php:0
+[30-Nov-2018 22:10:44 UTC] PHP Warning:  include(../../inc/dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/final-project/admin.php on line 6
+[30-Nov-2018 22:10:44 UTC] PHP Stack trace:
+[30-Nov-2018 22:10:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/admin.php:0
+[30-Nov-2018 22:10:44 UTC] PHP Warning:  include(): Failed opening '../../inc/dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/final-project/admin.php on line 6
+[30-Nov-2018 22:10:44 UTC] PHP Stack trace:
+[30-Nov-2018 22:10:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/admin.php:0
+[30-Nov-2018 22:10:44 UTC] PHP Fatal error:  Call to undefined function startConnection() in /home/ubuntu/workspace/cst336/final-project/admin.php on line 7
+[30-Nov-2018 22:10:44 UTC] PHP Stack trace:
+[30-Nov-2018 22:10:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/admin.php:0
+[30-Nov-2018 22:10:51 UTC] PHP Warning:  include(../../inc/dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/final-project/admin.php on line 6
+[30-Nov-2018 22:10:51 UTC] PHP Stack trace:
+[30-Nov-2018 22:10:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/admin.php:0
+[30-Nov-2018 22:10:51 UTC] PHP Warning:  include(): Failed opening '../../inc/dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/final-project/admin.php on line 6
+[30-Nov-2018 22:10:51 UTC] PHP Stack trace:
+[30-Nov-2018 22:10:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/admin.php:0
+[30-Nov-2018 22:10:51 UTC] PHP Fatal error:  Call to undefined function startConnection() in /home/ubuntu/workspace/cst336/final-project/admin.php on line 7
+[30-Nov-2018 22:10:51 UTC] PHP Stack trace:
+[30-Nov-2018 22:10:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/admin.php:0
+[30-Nov-2018 22:10:52 UTC] PHP Warning:  include(../../inc/dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/final-project/admin.php on line 6
+[30-Nov-2018 22:10:52 UTC] PHP Stack trace:
+[30-Nov-2018 22:10:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/admin.php:0
+[30-Nov-2018 22:10:52 UTC] PHP Warning:  include(): Failed opening '../../inc/dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/final-project/admin.php on line 6
+[30-Nov-2018 22:10:52 UTC] PHP Stack trace:
+[30-Nov-2018 22:10:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/admin.php:0
+[30-Nov-2018 22:10:52 UTC] PHP Fatal error:  Call to undefined function startConnection() in /home/ubuntu/workspace/cst336/final-project/admin.php on line 7
+[30-Nov-2018 22:10:52 UTC] PHP Stack trace:
+[30-Nov-2018 22:10:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/admin.php:0
+[30-Nov-2018 22:15:12 UTC] PHP Fatal error:  Call to undefined function validateSession() in /home/ubuntu/workspace/cst336/final-project/admin.php on line 10
+[30-Nov-2018 22:15:12 UTC] PHP Stack trace:
+[30-Nov-2018 22:15:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/admin.php:0
+[30-Nov-2018 22:16:25 UTC] PHP Fatal error:  Call to undefined function displayAllProducts() in /home/ubuntu/workspace/cst336/final-project/admin.php on line 55
+[30-Nov-2018 22:16:25 UTC] PHP Stack trace:
+[30-Nov-2018 22:16:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/admin.php:0
+[30-Nov-2018 22:17:14 UTC] PHP Fatal error:  Call to undefined function displayAllProducts() in /home/ubuntu/workspace/cst336/final-project/admin.php on line 55
+[30-Nov-2018 22:17:14 UTC] PHP Stack trace:
+[30-Nov-2018 22:17:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/admin.php:0
