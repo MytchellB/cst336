@@ -8,3 +8,12 @@ body {
 header{
     font-size: 2em;
 }
+
+input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+input{
+    margin-bottom: 5px;
+}
