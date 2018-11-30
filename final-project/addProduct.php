@@ -35,6 +35,8 @@ if (isset($_GET['addProduct'])) { //checks whether the form was submitted
 <html>
     <head>
         <title> Admin Section: Add New Product </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="styles/styles.css" type="text/css" />
     </head>
     <body>
         
@@ -63,5 +65,6 @@ if (isset($_GET['addProduct'])) { //checks whether the form was submitted
            <input type="submit" name="addProduct" value="Add Product">
         </form>
 
+        <a href='admin.php'>Admin Page</a>
     </body>
 </html>

@@ -16,7 +16,7 @@ validateSession();
     <head>
         <title> Admin Main Page </title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" type="text/css" />
-        <link rel="stylesheet" href="css/styles.css" type="text/css" />
+        <link rel="stylesheet" href="styles/styles.css" type="text/css" />
         
         <script>
         
@@ -24,7 +24,7 @@ validateSession();
                 
                 //alert();
                 //prompt();
-                return confirm("Really??");
+                return confirm("Really Delete Product??");
                 
             }
             
@@ -45,6 +45,9 @@ validateSession();
 
           <form action="addProduct.php">
               <input type="submit" value="Add New Product">
+          </form>
+          <form action="findAveragePrice.php">
+              <input type="submit" value="Find Average Price">
           </form>
          <form action="logout.php">
               <input type="submit" value="Logout">
