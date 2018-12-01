@@ -95,6 +95,7 @@
                         type: "GET",
                         url: "checkUsername.php",
                         dataType: "json",
+                        data: { "username": username },
                         success: function(data, status) {
                          
                             if(!data) {
