@@ -1,22 +1,3 @@
-<?php
-session_start();
-
-include '../inc/dbConnection.php';
-$dbConn = startConnection("ottermart");
-include 'inc/functions.php';
-validateSession();
-
-if (isset($_GET['find Average Price'])) { 
-
-    $sql = "SELECT AVG(price) price FROM om_product;";
-        
-    $stmt = $dbConn->prepare($sql);
-    $stmt->execute();
-    $avgPrice = $stmt->fetch(PDO::FETCH_ASSOC);
-    echo $avgPrice;
-}
-
-?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -25,14 +6,6 @@ if (isset($_GET['find Average Price'])) {
         <link rel="stylesheet" href="styles/styles.css" type="text/css" />
         
         <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-        <script>
-            $("document").ready(function() {
-                $("#displayAvgPrice").html(<?php echo $avgPrice ?>);
-                
-            }); // document ready
-            
-            
-        </script>
     </head>
     <body>
         
@@ -42,10 +15,28 @@ if (isset($_GET['find Average Price'])) {
             
 
         </div>
-        <form>
-        <input type="submit" name="find Average Price" value="Find Average Price">
-        </form><br>
+        <input id="findAvgButton" type="button" name="find Average Price" value="Find Average Price"><br>
 
         <a href='admin.php'>Admin Page</a>
     </body>
 </html>
+
+<script>
+$("document").ready(function() {
+    $("#findAvgButton").click(function() {
+                    $.ajax({
+                        url: "getAvgPrice.php",
+                        datatype: "json",
+                        success: function(data, status) {
+                         
+                            var obj = JSON.parse(data); // parse our json data into javascript values
+                            $("#displayAvgPrice").html(obj.price);
+                        
+                        },
+                        complete: function(data, status) { //optional, used for debugging purposes
+                            // alert(status);
+                        }
+                    }); //ajax
+    }); // find avg click
+}); // doc ready
+</script>

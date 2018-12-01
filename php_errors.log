@@ -64,3 +64,5 @@
 [30-Nov-2018 22:24:54 UTC] PHP Fatal error:  Call to undefined function startConnection() in /home/ubuntu/workspace/cst336/final-project/productInfo.php on line 5
 [30-Nov-2018 22:24:54 UTC] PHP Stack trace:
 [30-Nov-2018 22:24:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/productInfo.php:0
+[30-Nov-2018 23:17:19 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/cst336/final-project/findAveragePrice.php on line 47
+[30-Nov-2018 23:17:29 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/cst336/final-project/findAveragePrice.php on line 47

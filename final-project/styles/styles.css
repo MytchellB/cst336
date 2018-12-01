@@ -13,3 +13,7 @@ input{
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
+#displayAvgPrice{
+    font-size: 2em;
+}

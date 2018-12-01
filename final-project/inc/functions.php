@@ -52,7 +52,7 @@ function getProductInfo($productId) {
     $sql = "SELECT * FROM om_product WHERE productId = $productId";
     $stmt = $dbConn->prepare($sql);
     $stmt->execute();
-    $record = $stmt->fetch(PDO::FETCH_ASSOC); //we're expecting multiple records   
+    $record = $stmt->fetch(PDO::FETCH_ASSOC);
     
     return $record;
      
