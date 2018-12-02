@@ -18,7 +18,9 @@
             <div>
                 <header>User Search!</header>
                 <a href="adminLogIn.php">Admin Log In</a>
-                <!--<script>myfunc()</script>-->
+                <?php 
+                    searchProduct('lenovo');
+                ?>
                 
                 <br><br><hr>
                 <footer>
