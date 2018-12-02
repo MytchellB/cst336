@@ -59,4 +59,15 @@ function getProductInfo($productId) {
     
 }
 
+function searchProduct($productName) {
+    global $dbConn;
+    
+    $sql = "SELECT * FROM `om_product` WHERE productName LIKE '%" . $_GET['productName'] . "%';";
+    $stmt=$dbConn->prepare($sql);
+    $stmt->execute();
+    $record = $stmt->fetch(PDO::FETCH_ASSOC);
+    
+    return $record;
+}
+
 ?>
