@@ -8,7 +8,7 @@ include 'inc/functions.php';
 
 $productName = $_GET["productName"];
 
-$sql = "SELECT productName FROM om_product WHERE productName LIKE '%" . $productName . "%' ";
+$sql = "SELECT productName, price, productImage FROM om_product WHERE productName LIKE '%" . $productName . "%' ORDER BY productName ASC";
 
 $np = array();
 $np[":productName"] = $_GET["productName"];

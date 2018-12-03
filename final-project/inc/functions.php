@@ -82,4 +82,10 @@ function searchProduct($productName) {
     }
 }
 
+function checkSortRadio($sortBy) {
+        if ($_GET["sortBy"] == $sortBy) {
+            echo "checked";
+        }
+}
+
 ?>
