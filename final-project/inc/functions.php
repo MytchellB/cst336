@@ -62,12 +62,24 @@ function getProductInfo($productId) {
 function searchProduct($productName) {
     global $dbConn;
     
-    $sql = "SELECT * FROM `om_product` WHERE productName LIKE '%" . $_GET['productName'] . "%';";
+    // $sql = "SELECT * FROM `om_product` WHERE productName LIKE '%" . $_GET['productName'] . "%';";
+    $sql = "SELECT * FROM `om_product` WHERE productName LIKE '%book%';";
     $stmt=$dbConn->prepare($sql);
     $stmt->execute();
     $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
     
-    return $records;
+    foreach ($records as $record) {
+        echo "<form><input type='hidden' name='productId' value='".$record['productId']."'>";
+        echo "</form>";
+        
+        echo "[<a 
+        
+        onclick='openModal()' target='productModal'
+        href='productInfo.php?productId=".$record['productId']."'>".$record['productName']."</a>]  ";
+        echo " $" . $record[price]   . "<br><br>";
+        echo "<img src='" . $record[productImage] . "'>";
+        
+    }
 }
 
 ?>
