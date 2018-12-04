@@ -30,6 +30,9 @@ include 'inc/functions.php';
                 
                 <form>
                     Enter name of product to search: <input type="text" id="productNameSearch"></input><br>
+                    Price From:<input type="number" id="priceFrom" Min="0" Max="999" value="0"></input>
+                    Price To: <input type="number" id="priceTo" Min="0" Max="999" value="999"></input><br>
+                    Select a Category: <select id="category"></select><br>
                     Sort Results By:
                     <input type="radio" id="sortBy" name="sortBy" value="ASC" checked <?=checkSortRadio("ASC")?>>
                     <label for="asc">ASC</label>
@@ -64,12 +67,14 @@ include 'inc/functions.php';
 <script>
 $("document").ready(function() {
     var productName = ""; // Sets product name to blank to select all elements from DB
+    var priceFrom = 0;
+    var priceTo = 999.99;
     
     $.ajax({ // This AJAX call displays our entire table once the page loads.
         type: "GET",
         url: "searchProduct.php",
         datatype: "json",
-        data: { "productName": productName },
+        data: { "productName": productName, "priceFrom": priceFrom, "priceTo": priceTo },
         success: function(data, status) {
          
             $("#searchResults").html(""); // Clear out our search results before displaying new ones
@@ -80,10 +85,29 @@ $("document").ready(function() {
                     $("#searchResults").append(obj[i].productName + " $" + obj[i].price + "<img src='" + obj[i].productImage + "' width='100px'><br>");
                 }
             }
+            
+            
         
         },
         complete: function(data, status) { //optional, used for debugging purposes
         
+        }
+    }); //ajax
+    
+    $.ajax({ // This AJAX call displays all of our categories once the page loads.
+        type: "GET",
+        url: "getCategories.php",
+        datatype: "json",
+        success: function(data, status) {
+            var obj = JSON.parse(data); // parse our json data into javascript values
+            alert(obj);
+            $("#category").append("<option>Select One</option>");
+            for(var i =0; i < obj.length; i++){
+                $("#category").append("<option>" + obj[i].catName + "</option>");
+            }
+        },
+        complete: function(data, status) { //optional, used for debugging purposes
+            
         }
     }); //ajax
     
@@ -120,12 +144,14 @@ $("document").ready(function() {
     }); // Display Price toggle
     
     $("#productNameSearch").click(function() {
-        productName = $("#productNameSearch").val();
+        productName = $("#productNameSearch").val(); // Grab the values we need for our SQL statement.
+        priceFrom = $("#priceFrom").val();
+        priceTo = $("#priceTo").val();
                     $.ajax({
                         type: "GET",
                         url: "searchProduct.php",
                         datatype: "json",
-                        data: { "productName": productName },
+                        data: { "productName": productName, "priceFrom": priceFrom, "priceTo": priceTo },
                         success: function(data, status) {
                          
                             $("#searchResults").html(""); // Clear out our search results before displaying new ones
