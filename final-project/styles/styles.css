@@ -14,7 +14,7 @@ input{
     margin-bottom: 5px;
 }
 
-#displayAvgPrice, #displayHighestPrice, #displayLowestPrice{
+#displayAvgPrice, #displayHighestPrice, #displayLowestPrice, #displayDBCount, #displayDBSum{
     font-size: 2em;
 }
 
