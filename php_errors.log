@@ -236,3 +236,31 @@ Stack trace:
 #0 /home/ubuntu/workspace/cst336/final-project/searchProduct.php(21): PDOStatement->execute(Array)
 #1 {main}
   thrown in /home/ubuntu/workspace/cst336/final-project/searchProduct.php on line 21
+[04-Dec-2018 18:20:49 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0' at line 1' in /home/ubuntu/workspace/cst336/final-project/searchProduct.php:23
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/final-project/searchProduct.php(23): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/final-project/searchProduct.php on line 23
+[04-Dec-2018 18:20:54 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/cst336/final-project/searchProduct.php:23
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/final-project/searchProduct.php(23): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/final-project/searchProduct.php on line 23
+[04-Dec-2018 18:21:17 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/cst336/final-project/searchProduct.php on line 16
+[04-Dec-2018 18:21:17 UTC] PHP Stack trace:
+[04-Dec-2018 18:21:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/searchProduct.php:0
+[04-Dec-2018 18:21:33 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/cst336/final-project/searchProduct.php:24
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/final-project/searchProduct.php(24): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/final-project/searchProduct.php on line 24
+[04-Dec-2018 18:28:19 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/final-project/searchProduct.php:30
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/final-project/searchProduct.php(30): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/final-project/searchProduct.php on line 30
+[04-Dec-2018 18:29:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/final-project/searchProduct.php:30
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/final-project/searchProduct.php(30): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/final-project/searchProduct.php on line 30

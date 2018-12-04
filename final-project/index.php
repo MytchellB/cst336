@@ -32,7 +32,7 @@ include 'inc/functions.php';
                     Enter name of product to search: <input type="text" id="productNameSearch"></input><br>
                     Price From:<input type="number" id="priceFrom" Min="0" Max="999" value="0"></input>
                     Price To: <input type="number" id="priceTo" Min="0" Max="999" value="999"></input><br>
-                    Select a Category: <select id="category"></select><br>
+                    Display All of Category: <select id="category"></select><br>
                     Sort Results By:
                     <input type="radio" id="sortBy" name="sortBy" value="ASC" checked <?=checkSortRadio("ASC")?>>
                     <label for="asc">ASC</label>
@@ -69,12 +69,16 @@ $("document").ready(function() {
     var productName = ""; // Sets product name to blank to select all elements from DB
     var priceFrom = 0;
     var priceTo = 999.99;
+    var displayPrice = true;
+    var displayImg = true;
+    var sortBy = 'ASC';
+    var category = 0;
     
     $.ajax({ // This AJAX call displays our entire table once the page loads.
         type: "GET",
         url: "searchProduct.php",
         datatype: "json",
-        data: { "productName": productName, "priceFrom": priceFrom, "priceTo": priceTo },
+        data: { "productName": productName, "priceFrom": priceFrom, "priceTo": priceTo, "category": category },
         success: function(data, status) {
          
             $("#searchResults").html(""); // Clear out our search results before displaying new ones
@@ -100,22 +104,15 @@ $("document").ready(function() {
         datatype: "json",
         success: function(data, status) {
             var obj = JSON.parse(data); // parse our json data into javascript values
-            alert(obj);
             $("#category").append("<option>Select One</option>");
             for(var i =0; i < obj.length; i++){
-                $("#category").append("<option>" + obj[i].catName + "</option>");
+                $("#category").append("<option value='" + (i+1) + "'>" + obj[i].catName + "</option>");
             }
         },
         complete: function(data, status) { //optional, used for debugging purposes
             
         }
     }); //ajax
-    
-    // Rest of our variables are here
-    var displayPrice = true;
-    var displayImg = true;
-    var option3 = false;
-    var sortBy = 'ASC';
     
     $("#sortBy").click(function() { // Change our sort By value to ASC
         sortBy = $("#sortBy").val();
@@ -143,6 +140,10 @@ $("document").ready(function() {
         }
     }); // Display Price toggle
     
+    $("#category").change(function() { // Change value of category, when changed.
+        category = $("#category").val();
+    }); // Display Price toggle
+    
     $("#productNameSearch").click(function() {
         productName = $("#productNameSearch").val(); // Grab the values we need for our SQL statement.
         priceFrom = $("#priceFrom").val();
@@ -151,7 +152,7 @@ $("document").ready(function() {
                         type: "GET",
                         url: "searchProduct.php",
                         datatype: "json",
-                        data: { "productName": productName, "priceFrom": priceFrom, "priceTo": priceTo },
+                        data: { "productName": productName, "priceFrom": priceFrom, "priceTo": priceTo, "category": category },
                         success: function(data, status) {
                          
                             $("#searchResults").html(""); // Clear out our search results before displaying new ones
