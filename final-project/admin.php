@@ -4,7 +4,7 @@ session_start();
 
 
 include '../inc/dbConnection.php';
-$dbConn = startConnection("ottermart");
+$dbConn = startConnection("books");
 
 include 'inc/functions.php';
 validateSession();

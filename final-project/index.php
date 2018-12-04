@@ -4,7 +4,7 @@ session_start();
 
 
 include '../inc/dbConnection.php';
-$dbConn = startConnection("ottermart");
+$dbConn = startConnection("books");
 
 include 'inc/functions.php';
 
@@ -36,7 +36,7 @@ include 'inc/functions.php';
                     <input type="radio" id="sortBy2" name="sortBy" value="DESC" <?=checkSortRadio("DESC")?>>
                     <label for="desc">DESC</label><br>
                     <span id="displayPriceInput">Display Price? </span><input type="checkbox" id="displayPrice" name="displayPrice"><br>
-                    <span id="displayImgInput">Display Product Image? </span><input type="checkbox" id="displayImg" name="displayImg"><br>
+                    <span id="displayImgInput">Display Product Image? </span><input type="checkbox" id="displayImg" name="displayImg" checked><br>
                 </form>
                 
                 <hr>
@@ -102,7 +102,6 @@ $("document").ready(function() {
     }); // DESC search Button
     
     $("#displayPrice").change(function() { // Change value of display price from true to false and vice versa, when clicked.
-    alert("hello");
         if (displayPrice == false){
             displayPrice = true;
         }
@@ -147,12 +146,14 @@ $("document").ready(function() {
                             }
                             else{ // Instead of using SQL to search DESC, we're just going to iterate over our array backwards.
                                 for(var i =obj.length - 1; i >= 0; i--){
+                                    $("#searchResults").append(obj[i].productName);
                                     if(displayPrice){ // WILL display price
-                                        $("#searchResults").append(obj[i].productName + " $" + obj[i].price + "<br>");
+                                        $("#searchResults").append(" $" + obj[i].price);
                                     }
-                                    else{ // Will NOT display price.
-                                        $("#searchResults").append(obj[i].productName + "<br>");
+                                    if(displayImg) { // Will display Image
+                                        $("#searchResults").append("<img src='" + obj[i].productImage + "' width='100px'>");
                                     }
+                                    $("#searchResults").append("<br>");
                                 }
                             }
                         },

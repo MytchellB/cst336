@@ -2,7 +2,7 @@
 session_start();
 
 include '../inc/dbConnection.php';
-$dbConn = startConnection("ottermart");
+$dbConn = startConnection("books");
 $namedParameters = array();
 
 $username = $_POST['username'];
