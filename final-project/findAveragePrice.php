@@ -105,7 +105,7 @@ $("document").ready(function() {
                         success: function(data, status) {
                          
                             var obj = JSON.parse(data); // parse our json data into javascript values
-                            $("#displayDBSum").html(obj.sum);
+                            $("#displayDBSum").html("$" + obj.sum);
                         
                         }
                     }); //ajax
