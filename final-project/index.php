@@ -35,7 +35,7 @@ include 'inc/functions.php';
                     <label for="asc">ASC</label>
                     <input type="radio" id="sortBy2" name="sortBy" value="DESC" <?=checkSortRadio("DESC")?>>
                     <label for="desc">DESC</label><br>
-                    <span id="displayPriceInput">Display Price? </span><input type="checkbox" id="displayPrice" name="displayPrice"><br>
+                    <span id="displayPriceInput">Display Price? </span><input type="checkbox" id="displayPrice" name="displayPrice" checked><br>
                     <span id="displayImgInput">Display Product Image? </span><input type="checkbox" id="displayImg" name="displayImg" checked><br>
                 </form>
                 
@@ -77,7 +77,7 @@ $("document").ready(function() {
             
             if (sortBy == 'ASC'){ // iterate over array like normal if we're sorting by ASC.
                 for(var i =0; i < obj.length; i++){
-                    $("#searchResults").append(obj[i].productName + "<img src='" + obj[i].productImage + "' width='100px'><br>");
+                    $("#searchResults").append(obj[i].productName + " $" + obj[i].price + "<img src='" + obj[i].productImage + "' width='100px'><br>");
                 }
             }
         

@@ -9,12 +9,12 @@ $username = $_POST['username'];
 $password = sha1($_POST['password']);
 
 // This does not prevent SQL Injection
-// $sql = "SELECT * FROM om_admin
+// $sql = "SELECT * FROM bk_admin
 //         WHERE username = '$username'
 //         AND password = '$password'";
         
 // This DOES prevent against SQL injection
-$sql = "SELECT * FROM om_admin
+$sql = "SELECT * FROM bk_admin
         WHERE username = :username
         AND password = :password";
 

@@ -15,7 +15,7 @@ if (isset($_GET['addProduct'])) { //checks whether the form was submitted
     $image = $_GET['productImage'];
     
     
-    $sql = "INSERT INTO om_product (productName, productDescription, productImage,price, catId) 
+    $sql = "INSERT INTO bk_product (productName, productDescription, productImage,price, catId) 
             VALUES (:productName, :productDescription, :productImage, :price, :catId);";
     $np = array();
     $np[":productName"] = $productName;

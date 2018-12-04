@@ -7,7 +7,7 @@ $dbConn = startConnection("books");
 include 'inc/functions.php';
 validateSession();
 
-$sql = "SELECT AVG(price) price FROM om_product;";
+$sql = "SELECT AVG(price) price FROM bk_product;";
         
 $stmt = $dbConn->prepare($sql);
 $stmt->execute();

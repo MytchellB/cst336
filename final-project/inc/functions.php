@@ -10,7 +10,7 @@ function validateSession(){
 function displayAllProducts(){
     global $dbConn;
     
-    $sql = "SELECT * FROM om_product ORDER BY productName";
+    $sql = "SELECT * FROM bk_product ORDER BY productName";
     $stmt = $dbConn->prepare($sql);
     $stmt->execute();
     $records = $stmt->fetchAll(PDO::FETCH_ASSOC); //we're expecting multiple records
@@ -35,7 +35,7 @@ function displayAllProducts(){
 function getCategories() {
     global $dbConn;
     
-    $sql = "SELECT * FROM om_category ORDER BY catName";
+    $sql = "SELECT * FROM bk_category ORDER BY catName";
     $stmt = $dbConn->prepare($sql);
     $stmt->execute();
     $records = $stmt->fetchAll(PDO::FETCH_ASSOC); //we're expecting multiple records   
@@ -49,7 +49,7 @@ function getCategories() {
 function getProductInfo($productId) {
      global $dbConn;
     
-    $sql = "SELECT * FROM om_product WHERE productId = $productId";
+    $sql = "SELECT * FROM bk_product WHERE productId = $productId";
     $stmt = $dbConn->prepare($sql);
     $stmt->execute();
     $record = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -62,8 +62,8 @@ function getProductInfo($productId) {
 function searchProduct($productName) {
     global $dbConn;
     
-    // $sql = "SELECT * FROM `om_product` WHERE productName LIKE '%" . $_GET['productName'] . "%';";
-    $sql = "SELECT * FROM `om_product` WHERE productName LIKE '%book%';";
+    // $sql = "SELECT * FROM `bk_product` WHERE productName LIKE '%" . $_GET['productName'] . "%';";
+    $sql = "SELECT * FROM `bk_product` WHERE productName LIKE '%book%';";
     $stmt=$dbConn->prepare($sql);
     $stmt->execute();
     $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
