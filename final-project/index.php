@@ -26,7 +26,9 @@ include 'inc/functions.php';
         <main>
             <div>
                 <header>User Search!</header>
-                <a href="adminLogIn.php">Admin Log In</a>
+                <div id="adminLogIn">
+                    <a href="adminLogIn.php" class="btn btn-success">Admin Log In</a>
+                </div>
                 
                 <form>
                     Enter name of product to search: <input type="text" id="productNameSearch"></input><br>
@@ -49,8 +51,8 @@ include 'inc/functions.php';
                 
                 <br><br><hr>
                 <footer>
-                    Use Instructions: To search, click on the search text field!
-                    Must select Order By, and display price before typing in search value!
+                    Use Instructions: To search, click on the search text field!<br>
+                    Must select Order By, display price, and select category before searching!<br>
                     For educational purposes only - Mytchell Beaton
                 </footer>
             </div>
@@ -80,7 +82,6 @@ $("document").ready(function() {
         datatype: "json",
         data: { "productName": productName, "priceFrom": priceFrom, "priceTo": priceTo, "category": category },
         success: function(data, status) {
-         
             $("#searchResults").html(""); // Clear out our search results before displaying new ones
             var obj = JSON.parse(data); // parse our json data into javascript values
             
@@ -89,12 +90,6 @@ $("document").ready(function() {
                     $("#searchResults").append(obj[i].productName + " $" + obj[i].price + "<img src='" + obj[i].productImage + "' width='100px'><br>");
                 }
             }
-            
-            
-        
-        },
-        complete: function(data, status) { //optional, used for debugging purposes
-        
         }
     }); //ajax
     
@@ -104,7 +99,7 @@ $("document").ready(function() {
         datatype: "json",
         success: function(data, status) {
             var obj = JSON.parse(data); // parse our json data into javascript values
-            $("#category").append("<option>Select One</option>");
+            $("#category").append("<option>Display Everything</option>");
             for(var i =0; i < obj.length; i++){
                 $("#category").append("<option value='" + (i+1) + "'>" + obj[i].catName + "</option>");
             }

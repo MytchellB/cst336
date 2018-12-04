@@ -19,21 +19,13 @@ validateSession();
         <link rel="stylesheet" href="styles/styles.css" type="text/css" />
         
         <script>
-        
             function confirmDelete() {
-                
-                //alert();
-                //prompt();
                 return confirm("Really Delete Product??");
-                
             }
             
             function openModal() {
-                
                 $('#myModal').modal("show");
             }
-            
-            
         </script>
     
     </head>
@@ -47,7 +39,7 @@ validateSession();
               <input type="submit" value="Add New Product">
           </form>
           <form action="findAveragePrice.php">
-              <input type="submit" value="Find Average Price">
+              <input type="submit" value="Admin Report Functions">
           </form>
          <form action="logout.php">
               <input type="submit" value="Logout">
