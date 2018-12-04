@@ -16,15 +16,29 @@
         </div>
         <input id="findAvgButton" type="button" name="find Average Price" value="Find Average Price"><br>
         
+        
         <br>Highest Price:<div id="displayHighestPrice">
             
         </div>
         <input id="findHighestPrice" type="button" name="find Highest Price" value="Find Highest Price"><br>
         
+        
         <br>Lowest Price:<div id="displayLowestPrice">
             
         </div>
         <input id="findLowestPrice" type="button" name="find Lowest Price" value="Find Lowest Price"><br>
+        
+        
+        <br>Number of Products in Database:<div id="displayDBCount">
+            
+        </div>
+        <input id="findDBCount" type="button" name="find DB Count" value="Find DB Count"><br>
+        
+        
+        <br>Total Price of All Products in Database:<div id="displayDBSum">
+            
+        </div>
+        <input id="findDBSum" type="button" name="find DB Sum" value="Find DB Sum"><br>
 
         <a href='admin.php'>Admin Page</a>
     </body>
@@ -70,5 +84,31 @@ $("document").ready(function() {
                         }
                     }); //ajax
     }); // find Highest Price click
+    
+    $("#findDBCount").click(function() {
+                    $.ajax({
+                        url: "getDBCount.php",
+                        datatype: "json",
+                        success: function(data, status) {
+                         
+                            var obj = JSON.parse(data); // parse our json data into javascript values
+                            $("#displayDBCount").html(obj.count);
+                        
+                        }
+                    }); //ajax
+    }); // find Database Count click
+    
+    $("#findDBSum").click(function() {
+                    $.ajax({
+                        url: "getDBSum.php",
+                        datatype: "json",
+                        success: function(data, status) {
+                         
+                            var obj = JSON.parse(data); // parse our json data into javascript values
+                            $("#displayDBSum").html(obj.sum);
+                        
+                        }
+                    }); //ajax
+    }); // find Database Sum click
 }); // doc ready
 </script>
