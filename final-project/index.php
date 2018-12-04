@@ -88,7 +88,7 @@ $("document").ready(function() {
     }); //ajax
     
     // Rest of our variables are here
-    var displayPrice = false;
+    var displayPrice = true;
     var displayImg = true;
     var option3 = false;
     var sortBy = 'ASC';
