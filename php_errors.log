@@ -264,3 +264,36 @@ Stack trace:
 #0 /home/ubuntu/workspace/cst336/final-project/searchProduct.php(30): PDOStatement->execute(Array)
 #1 {main}
   thrown in /home/ubuntu/workspace/cst336/final-project/searchProduct.php on line 30
+[07-Dec-2018 20:52:35 UTC] PHP Fatal error:  Cannot redeclare startConnection() (previously declared in /home/ubuntu/workspace/cst336/inc/dbConnection.php:3) in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 3
+[07-Dec-2018 20:52:35 UTC] PHP Stack trace:
+[07-Dec-2018 20:52:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/index.php:0
+[07-Dec-2018 20:52:41 UTC] PHP Fatal error:  Cannot redeclare startConnection() (previously declared in /home/ubuntu/workspace/cst336/inc/dbConnection.php:3) in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 3
+[07-Dec-2018 20:52:41 UTC] PHP Stack trace:
+[07-Dec-2018 20:52:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/admin.php:0
+[07-Dec-2018 21:18:48 UTC] PHP Fatal error:  Cannot redeclare startConnection() (previously declared in /home/ubuntu/workspace/cst336/inc/dbConnection.php:3) in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 3
+[07-Dec-2018 21:18:48 UTC] PHP Stack trace:
+[07-Dec-2018 21:18:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/index.php:0
+[07-Dec-2018 21:25:05 UTC] PHP Fatal error:  Cannot redeclare startConnection() (previously declared in /home/ubuntu/workspace/cst336/inc/dbConnection.php:3) in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 3
+[07-Dec-2018 21:25:05 UTC] PHP Stack trace:
+[07-Dec-2018 21:25:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/index.php:0
+[07-Dec-2018 21:28:27 UTC] PHP Fatal error:  Cannot redeclare startConnection() (previously declared in /home/ubuntu/workspace/cst336/inc/dbConnection.php:3) in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 3
+[07-Dec-2018 21:28:27 UTC] PHP Stack trace:
+[07-Dec-2018 21:28:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/admin.php:0
+[07-Dec-2018 21:50:08 UTC] PHP Fatal error:  Cannot redeclare startConnection() (previously declared in /home/ubuntu/workspace/cst336/inc/dbConnection.php:3) in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 3
+[07-Dec-2018 21:50:08 UTC] PHP Stack trace:
+[07-Dec-2018 21:50:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/admin.php:0
+[07-Dec-2018 21:54:15 UTC] PHP Fatal error:  Cannot redeclare startConnection() (previously declared in /home/ubuntu/workspace/cst336/inc/dbConnection.php:3) in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 3
+[07-Dec-2018 21:54:15 UTC] PHP Stack trace:
+[07-Dec-2018 21:54:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/admin.php:0
+[07-Dec-2018 21:54:29 UTC] PHP Fatal error:  Cannot redeclare startConnection() (previously declared in /home/ubuntu/workspace/cst336/inc/dbConnection.php:3) in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 3
+[07-Dec-2018 21:54:29 UTC] PHP Stack trace:
+[07-Dec-2018 21:54:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/admin.php:0
+[07-Dec-2018 22:52:19 UTC] PHP Fatal error:  Cannot redeclare startConnection() (previously declared in /home/ubuntu/workspace/cst336/inc/dbConnection.php:3) in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 3
+[07-Dec-2018 22:52:19 UTC] PHP Stack trace:
+[07-Dec-2018 22:52:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/admin.php:0
+[07-Dec-2018 23:04:34 UTC] PHP Fatal error:  Cannot redeclare startConnection() (previously declared in /home/ubuntu/workspace/cst336/inc/dbConnection.php:3) in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 3
+[07-Dec-2018 23:04:34 UTC] PHP Stack trace:
+[07-Dec-2018 23:04:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/index.php:0
+[07-Dec-2018 23:42:41 UTC] PHP Fatal error:  Cannot redeclare startConnection() (previously declared in /home/ubuntu/workspace/cst336/inc/dbConnection.php:3) in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 3
+[07-Dec-2018 23:42:41 UTC] PHP Stack trace:
+[07-Dec-2018 23:42:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/index.php:0
