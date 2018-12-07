@@ -22,7 +22,6 @@
 	  ?>
         <!-- Display Carousel here  -->
         
-        
         <a class="btn btn-outline-success" href="pets.php" role="button">Adopt Now</a>
         <br><br><br>
         <?php

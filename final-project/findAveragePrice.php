@@ -40,7 +40,7 @@
         </div>
         <input id="findDBSum" type="button" name="find DB Sum" value="Find DB Sum"><br>
 
-        <a href='admin.php'>Admin Page</a>
+        <a href='admin.php' class="button btn-success">Admin Page</a>
     </body>
 </html>
 

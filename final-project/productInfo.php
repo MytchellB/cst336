@@ -25,7 +25,7 @@ if (isset($_GET['productId'])) {
         
         <h3><?=$productInfo['productName']?></h3>
         <?=$productInfo['productDescription']?><br>
-        <img src='<?=$productInfo['productImage']?>' height='75' />
+        <img src='<?=$productInfo['productImage']?>' height='150' />
         <?=$productInfo['price']?>
 
     </body>

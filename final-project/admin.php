@@ -31,7 +31,7 @@ validateSession();
     </head>
     <body>
         
-        <h1> ADMIN SECTION - OTTERMART </h1>
+        <h1> ADMIN SECTION - BOOKS </h1>
         
          <h3>Welcome <?= $_SESSION['adminFullName'] ?> </h3>
 
@@ -39,10 +39,10 @@ validateSession();
               <input type="submit" value="Add New Product">
           </form>
           <form action="findAveragePrice.php">
-              <input type="submit" value="Admin Report Functions">
+              <input type="submit" value="Admin Report Functions"  class="button btn-info">
           </form>
          <form action="logout.php">
-              <input type="submit" value="Logout">
+              <input type="submit" value="Logout" class="button btn-danger">
           </form>
 
            <br><br>

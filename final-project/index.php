@@ -25,7 +25,7 @@ include 'inc/functions.php';
     <body>
         <main>
             <div>
-                <header>User Search!</header>
+                <header>Books - User Search!</header>
                 <div id="adminLogIn">
                     <a href="adminLogIn.php" class="btn btn-success">Admin Log In</a>
                 </div>
