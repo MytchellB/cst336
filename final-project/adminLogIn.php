@@ -12,7 +12,7 @@
         <form method="POST" action="loginProcess.php">
           Username:  <input type="text" name="username"/> <br>
           Password:  <input type="password" name="password"/> <br>
-          <input type="submit" value="Login">
+          <input type="submit" class="btn btn-success" value="Login">
         </form>
         
         <a href="index.php">Go back to User Search</a>
