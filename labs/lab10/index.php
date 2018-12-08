@@ -21,6 +21,39 @@
 	    
 	  ?>
         <!-- Display Carousel here  -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <?php
+                    for($i=1; $i < 10; $i++){
+                        echo "<li data-target='#carouselExampleIndicators' data-slide-to='$i'></li>";
+                    }
+                ?>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="img/alex.jpg" alt="First slide">
+                </div>
+                <?php
+                    $petsArray = array('bear', 'carl', 'charlie', 'lion', 'otter', 'sally', 'samantha', 'ted', 'tiger');
+                    for ($i = 0; $i < 8; $i++) {
+                      echo "<div class=\"carousel-item ";
+                    //   echo ($i == 0)?" active ":"";
+                      echo "\">";
+                      echo "<img width=\"500px\" class=\"d-block w-100\" src=\"img/" . $petsArray[$i] . ".jpg\" alt=\"Second slide\">";
+                      echo "</div>";
+                  }
+                ?>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
         
         <a class="btn btn-outline-success" href="pets.php" role="button">Adopt Now</a>
         <br><br><br>
