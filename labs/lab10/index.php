@@ -8,6 +8,16 @@
 	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>   
         <style>
+            .carousel {
+                margin: 0 auto;
+                width:640px;
+                height:360px;
+                margin-bottom: 15px;
+            }
+            .carousel-inner > .carousel-item > img {
+              width:640px;
+              height:360px;
+            }
             body {
                 text-align: center;
             }
@@ -25,7 +35,7 @@
               <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <?php
-                    for($i=1; $i < 10; $i++){
+                    for($i=1; $i < 9; $i++){
                         echo "<li data-target='#carouselExampleIndicators' data-slide-to='$i'></li>";
                     }
                 ?>
@@ -37,7 +47,7 @@
                 <?php
                     $petsArray = array('bear', 'carl', 'charlie', 'lion', 'otter', 'sally', 'samantha', 'ted', 'tiger');
                     for ($i = 0; $i < 8; $i++) {
-                      echo "<div class=\"carousel-item ";
+                      echo "<div class=\"carousel-item";
                     //   echo ($i == 0)?" active ":"";
                       echo "\">";
                       echo "<img width=\"500px\" class=\"d-block w-100\" src=\"img/" . $petsArray[$i] . ".jpg\" alt=\"Second slide\">";
