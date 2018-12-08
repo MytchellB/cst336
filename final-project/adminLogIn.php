@@ -7,7 +7,7 @@
     </head>
     <body>
 
-        <h1> Ottermart - Admin Login </h1>
+        <h1> Books - Admin Login </h1>
         
         <form method="POST" action="loginProcess.php">
           Username:  <input type="text" name="username"/> <br>
