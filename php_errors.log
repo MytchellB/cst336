@@ -342,3 +342,50 @@ Stack trace:
 [10-Dec-2018 23:42:14 UTC] PHP Fatal error:  Cannot redeclare startConnection() (previously declared in /home/ubuntu/workspace/cst336/inc/dbConnection.php:3) in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 3
 [10-Dec-2018 23:42:14 UTC] PHP Stack trace:
 [10-Dec-2018 23:42:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/admin.php:0
+[11-Dec-2018 03:18:19 UTC] PHP Fatal error:  Cannot redeclare startConnection() (previously declared in /home/ubuntu/workspace/cst336/inc/dbConnection.php:3) in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 3
+[11-Dec-2018 03:18:19 UTC] PHP Stack trace:
+[11-Dec-2018 03:18:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/index.php:0
+[11-Dec-2018 03:18:23 UTC] PHP Fatal error:  Cannot redeclare startConnection() (previously declared in /home/ubuntu/workspace/cst336/inc/dbConnection.php:3) in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 3
+[11-Dec-2018 03:18:23 UTC] PHP Stack trace:
+[11-Dec-2018 03:18:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/admin.php:0
+[11-Dec-2018 03:18:34 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/cst336/final-project/addProduct.php:28
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/final-project/addProduct.php(28): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/final-project/addProduct.php on line 28
+[11-Dec-2018 03:18:58 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/cst336/final-project/addProduct.php:28
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/final-project/addProduct.php(28): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/final-project/addProduct.php on line 28
+[11-Dec-2018 03:19:04 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/cst336/final-project/addProduct.php:28
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/final-project/addProduct.php(28): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/final-project/addProduct.php on line 28
+[12-Dec-2018 03:46:49 UTC] PHP Fatal error:  Cannot redeclare startConnection() (previously declared in /home/ubuntu/workspace/cst336/inc/dbConnection.php:3) in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 3
+[12-Dec-2018 03:46:49 UTC] PHP Stack trace:
+[12-Dec-2018 03:46:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/index.php:0
+[12-Dec-2018 03:46:55 UTC] PHP Fatal error:  Cannot redeclare startConnection() (previously declared in /home/ubuntu/workspace/cst336/inc/dbConnection.php:3) in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 3
+[12-Dec-2018 03:46:55 UTC] PHP Stack trace:
+[12-Dec-2018 03:46:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/admin.php:0
+[12-Dec-2018 03:47:18 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/cst336/final-project/addProduct.php:28
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/final-project/addProduct.php(28): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/final-project/addProduct.php on line 28
+[12-Dec-2018 04:07:59 UTC] PHP Fatal error:  Cannot redeclare startConnection() (previously declared in /home/ubuntu/workspace/cst336/inc/dbConnection.php:3) in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 3
+[12-Dec-2018 04:07:59 UTC] PHP Stack trace:
+[12-Dec-2018 04:07:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/admin.php:0
+[12-Dec-2018 04:08:06 UTC] PHP Fatal error:  Cannot redeclare startConnection() (previously declared in /home/ubuntu/workspace/cst336/inc/dbConnection.php:3) in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 3
+[12-Dec-2018 04:08:06 UTC] PHP Stack trace:
+[12-Dec-2018 04:08:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/admin.php:0
+[12-Dec-2018 04:08:15 UTC] PHP Fatal error:  Cannot redeclare startConnection() (previously declared in /home/ubuntu/workspace/cst336/inc/dbConnection.php:3) in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 3
+[12-Dec-2018 04:08:15 UTC] PHP Stack trace:
+[12-Dec-2018 04:08:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/admin.php:0
+[12-Dec-2018 04:37:56 UTC] PHP Fatal error:  Cannot redeclare startConnection() (previously declared in /home/ubuntu/workspace/cst336/inc/dbConnection.php:3) in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 3
+[12-Dec-2018 04:37:56 UTC] PHP Stack trace:
+[12-Dec-2018 04:37:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/admin.php:0
+[17-Dec-2018 02:52:33 UTC] PHP Fatal error:  Cannot redeclare startConnection() (previously declared in /home/ubuntu/workspace/cst336/inc/dbConnection.php:3) in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 3
+[17-Dec-2018 02:52:33 UTC] PHP Stack trace:
+[17-Dec-2018 02:52:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/final-project/index.php:0
